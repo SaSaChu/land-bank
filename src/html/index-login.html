@@ -1,0 +1,3729 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+  <head>
+    <meta http-equiv="Content-Language" content="zh-tw">
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no,minimal-ui">
+
+    <title>LEXUS 車主尊榮回饋</title>
+
+    <link rel="shortcut icon" href="/images/favicon.ico">
+
+    <script language="javascript" type="text/javascript" src="js/jquery-1.12.4.min.js"></script>
+    <script language="javascript" type="text/javascript" src="js/imgLiquid-min.js"></script>
+    <script language="javascript" type="text/javascript" src="js/banner.js"></script>
+    <script language="javascript" type="text/javascript" src="js/public.js"></script>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="css/public.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Ubuntu:wght@300;400;500;700&display=swap" rel="stylesheet">
+    
+    <script src="https://kit.fontawesome.com/25b2931f6f.js" crossorigin="anonymous"></script>
+
+  </head>
+
+  <body>
+    <header>
+      <div class="container-fluid">
+        <div class="row justify-content-between align-items-center">
+          <div class="col-4">
+            <!-- 有登入的話，記得要把這個打開 -->
+            <button  class="bg-white social-font h-arrow">
+              <i class="bi bi-chevron-left"></i>
+            </button>
+          </div>
+          <div class="col-4 text-center">
+            <a href="https://www.lexus.com.tw/eliterewards/index.aspx#/"><img src="images/logo.svg" class="logoboxs"></a>
+          </div>
+          <div class="col-4 d-flex justify-content-end align-items-center">
+            <!-- member -->
+            <a href="" class="float-end me-xl-3 me-2" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal"><img src="images/icon-member.svg"  class="h-iconboxs"></a>
+            <!-- search -->
+            <a class="float-end me-xl-3 me-2" data-bs-toggle="offcanvas" data-bs-target="#offcanvasTop" ><img src="images/icon-search.svg" class="mob-serach"></a>
+            <!-- qa -->
+            <a href="qa.html" class="float-end"><img src="images/icon-qa.svg"  class="h-iconboxs"></a>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- banner -->
+    <div class="swiper mySwiper mobile-close">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide"><img src="images/banner.jpg"></div>
+        <div class="swiper-slide"><img src="images/banner02.jpg"></div>
+        <div class="swiper-slide"><img src="images/banner03.jpg"></div>
+        <div class="swiper-slide"><img src="images/banner04.jpg"></div>
+        <div class="swiper-slide"><img src="images/banner05.jpg"></div>
+      </div>
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-pagination"></div>
+    </div>
+
+    <!-- mobile topBoxs -->
+    <div class="mobile-open w-100">
+      <div class="mobile-header">
+        <!-- <div class="container-fluid">
+          <div class="row align-items-center">
+            <div class="col"><h3 class="text-white mb-0">Elite 菁英卡 ( ANY-8500 )<br>您好：</h3></div>
+            <div class="col-auto"><a><img src="images/search-icon.svg" class="mob-serach"></a></div>
+          </div>
+        </div> -->
+      </div>
+    </div>
+
+    <!-- web topBoxs -->
+    <!--  <div class="topboxs py-4 mobile-close">
+      <div class="mainboxs w990 container-fluid px-0">
+        <div class="row mx-auto align-items-center">
+          <div class="col px-0">
+            <h1 class="mb-0">Elite 菁英卡 ( ANY-8500 )，您好：</h1>
+          </div>
+          <div class="col-auto">
+            <a><img src="images/search-icon.svg"></a>
+          </div>
+        </div>
+      </div>
+    </div> -->
+
+    <div class="navboxs pt-4">
+      <div class="mainboxs w990">
+        <ul class="nav nav-pills nav-fill" id="pills-tab" role="tablist">
+          <li class="nav-item" role="presentation">
+            <button class="nav-link ticket-nav active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#ticket-list" type="button" role="tab" aria-controls="ticket-list" aria-selected="true">優惠禮遇</button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button class="nav-link ticket-nav" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#my-ticket" type="button" role="tab" aria-controls="my-ticket" aria-selected="false">我的票券匣</button>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="mainboxs">
+      <div class="tab-content" id="pills-tabContent">
+        <!-- 01 list 優惠禮遇 -->
+        <div class="tab-pane w990 fade show active" id="ticket-list" role="tabpanel" aria-labelledby="ticket-list-tab">
+          <div class="my-4 px-3 fs-4 swiper swiper-tag">
+            <!-- 01 list類別 -->
+            <div class="swiper-wrapper swiper-wrapper-tag nav nav-pills" id="pills-tab" role="tablist" style="flex-wrap: nowrap;">
+              <!-- 010 -->
+              <button class="swiper-slide swiper-slide-tag nav-link tag-link active" id="tag01-tab" data-bs-toggle="pill" data-bs-target="#tag01" role="tab" aria-controls="tag01" aria-selected="true">
+                全部
+              </button>
+              <!-- 011 -->
+              <button class="swiper-slide swiper-slide-tag nav-link tag-link" id="tag02-tab" data-bs-toggle="pill" data-bs-target="#tag02" role="tab" aria-controls="tag02" aria-selected="false">
+                限量優惠
+              </button>
+              <!-- 012 -->
+              <button class="swiper-slide swiper-slide-tag nav-link tag-link" id="tag03-tab" data-bs-toggle="pill" data-bs-target="#tag03" role="tab" aria-controls="tag03" aria-selected="false">
+                渡假休閒
+              </button>
+              <!-- 013 -->
+              <button class="swiper-slide swiper-slide-tag nav-link tag-link" id="tag04-tab" data-bs-toggle="pill" data-bs-target="#tag04" role="tab" aria-controls="tag04" aria-selected="false">
+                美饌饗宴
+              </button>
+              <!-- 014 -->
+              <button class="swiper-slide swiper-slide-tag nav-link tag-link" id="tag05-tab" data-bs-toggle="pill" data-bs-target="#tag05" role="tab" aria-controls="tag05" aria-selected="false">
+                極致生活
+              </button>
+              <!-- 015 -->
+              <button class="swiper-slide swiper-slide-tag nav-link tag-link" id="tag06-tab" data-bs-toggle="pill" data-bs-target="#tag06" role="tab" aria-controls="tag06" aria-selected="false">
+                Lexus 原廠專屬優惠
+              </button>
+              <!-- 016 -->
+              <button class="swiper-slide swiper-slide-tag nav-link tag-link" id="tag07-tab" data-bs-toggle="pill" data-bs-target="#tag07" role="tab" aria-controls="tag07" aria-selected="false">
+              </button>
+              <!-- 017 -->
+              <button class="swiper-slide swiper-slide-tag nav-link tag-link" id="tag08-tab" data-bs-toggle="pill" data-bs-target="#tag08" role="tab" aria-controls="tag08" aria-selected="false">  
+              </button>
+              <!-- 018 -->
+              <button class="swiper-slide swiper-slide-tag nav-link tag-link" id="tag09-tab" data-bs-toggle="pill" data-bs-target="#tag09" role="tab" aria-controls="tag09" aria-selected="false">
+              </button>
+            </div>
+            <div class="swiper-button-prev swiper-button-prev-tag"></div>
+            <div class="swiper-button-next swiper-button-next-tag"></div>
+          </div>
+
+          <div class="tab-content" id="pills-tabContent">
+            <!-- 010 -->
+            <div class="tab-pane fade show active" id="tag01" role="tabpanel" aria-labelledby="tag01-tab">
+              <div class="container-fluid px-lg-0 px-3">
+                <div class="row">
+                  <!-- 01 -->
+                  <div class="col-sm-4 mb-4">
+                    <div class="card">
+                      <div class="position-relative">
+                        <div class="position-absolute flagBoxs">限量</div>
+                        <img src="images/pic01.png" class="card-img-top">
+                      </div>
+                      <div class="card-body">
+                        <p class="card-text mb-0">Le Ruban Pâtisserie 法朋烘焙甜點坊</p>
+                        <h5 class="card-title text-primary mb-3">當a月壽星生日禮當a月壽星生日禮當a月壽星生日禮當a月壽星生日禮當a月壽星生日禮</h5>
+
+                        <!-- <div class="mb-2">
+                          <span class="badge label-text me-2">標籤一</span>
+                          <span class="badge label-text">標籤二</span>
+                        </div> -->
+
+                        <p class="card-text cupon-text mb-2">當月壽星購買法朋7吋以上慶祝蛋糕即贈送保冷袋（價值＄299）
+                        </p>
+
+                        <div class="f9 mb-3 text-black-50">
+                          <i class="bi bi-calendar2-event align-baseline me-2"></i>2023年07月01日至2024年06月30日止
+                        </div>
+
+                        <div class="container-fluid overflow-hidden px-0">
+                          <div class="row gx-2">
+                            <div class="col-12">
+                              <a href="#" class="w-100 btn btn-black">Read More</a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- 02 -->
+                  <div class="col-sm-4 mb-4">
+                    <div class="card">
+                      <div class="position-relative">
+                        <div class="position-absolute flagBoxs">限量</div>
+                        <img src="images/pic02.png" class="card-img-top">
+                      </div>
+                      <div class="card-body">
+                        <p class="card-text mb-0">Le Ruban Pâtisserie 法朋烘焙甜點坊</p>
+                        <h5 class="card-title text-primary mb-3">尊榮獻禮-法朋老奶奶檸檬蛋糕</h5>
+
+                        <!-- <div class="mb-2">
+                          <span class="badge label-text me-2">標籤一</span>
+                          <span class="badge label-text">標籤二</span>
+                        </div> -->
+
+                        <p class="card-text cupon-text mb-2">贈送老奶奶檸檬蛋糕2片組乙份。（限尊榮會員本人每卡兌換乙次，不可重覆兌換）
+                        </p>
+
+                        <div class="f9 mb-3 text-black-50">
+                          <i class="bi bi-calendar2-event align-baseline me-2"></i>2023年07月01日至2024年06月30日止
+                        </div>
+
+                        <div class="container-fluid overflow-hidden px-0">
+                          <div class="row gx-2">
+                            <div class="col-12">
+                              <a href="#" class="w-100 btn btn-black">Read More</a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- 03 -->
+                  <div class="col-sm-4 mb-4">
+                    <div class="card">
+                      <div class="position-relative">
+                        <!-- <div class="position-absolute flagBoxs">限量</div> -->
+                        <img src="images/pic03.png" class="card-img-top">
+                      </div>
+                      <div class="card-body">
+                        <p class="card-text mb-0">Le Ruban Pâtisserie 法朋烘焙甜點坊</p>
+                        <h5 class="card-title text-primary mb-3">當月壽星生日禮</h5>
+
+                        <!-- <div class="mb-2">
+                          <span class="badge label-text me-2">標籤一</span>
+                          <span class="badge label-text">標籤二</span>
+                        </div> -->
+
+                        <p class="card-text cupon-text mb-2">當月壽星購買法朋7吋以上慶祝蛋糕即贈送保冷袋（價值＄299）
+                        </p>
+
+                        <div class="f9 mb-3 text-black-50">
+                          <i class="bi bi-calendar2-event align-baseline me-2"></i>2023年07月01日至2024年06月30日止
+                        </div>
+
+                        <div class="container-fluid overflow-hidden px-0">
+                          <div class="row gx-2">
+                            <div class="col-12">
+                              <a href="#" class="w-100 btn btn-black">Read More</a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- 04 -->
+                  <div class="col-sm-4 mb-4">
+                    <div class="card">
+                      <div class="position-relative">
+                        <!-- <div class="position-absolute flagBoxs">限量</div> -->
+                        <img src="images/pic04.png" class="card-img-top">
+                      </div>
+                      <div class="card-body">
+                        <p class="card-text mb-0">Le Ruban Pâtisserie 法朋烘焙甜點坊</p>
+                        <h5 class="card-title text-primary mb-3">當月壽星生日禮</h5>
+
+                        <!-- <div class="mb-2">
+                          <span class="badge label-text me-2">標籤一</span>
+                          <span class="badge label-text">標籤二</span>
+                        </div> -->
+
+                        <p class="card-text cupon-text mb-2">當月壽星購買法朋7吋以上慶祝蛋糕即贈送保冷袋（價值＄299）
+                        </p>
+
+                        <div class="f9 mb-3 text-black-50">
+                          <i class="bi bi-calendar2-event align-baseline me-2"></i>2023年07月01日至2024年06月30日止
+                        </div>
+
+                        <div class="container-fluid overflow-hidden px-0">
+                          <div class="row gx-2">
+                            <div class="col-12">
+                              <a href="#" class="w-100 btn btn-black">Read More</a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- 05 -->
+                  <div class="col-sm-4 mb-4">
+                    <div class="card">
+                      <div class="position-relative">
+                        <!-- <div class="position-absolute flagBoxs">限量</div> -->
+                        <img src="images/pic05.png" class="card-img-top">
+                      </div>
+                      <div class="card-body">
+                        <p class="card-text mb-0">Le Ruban Pâtisserie 法朋烘焙甜點坊</p>
+                        <h5 class="card-title text-primary mb-3">當月壽星生日禮</h5>
+
+                        <!-- <div class="mb-2">
+                          <span class="badge label-text me-2">標籤一</span>
+                          <span class="badge label-text">標籤二</span>
+                        </div> -->
+
+                        <p class="card-text cupon-text mb-2">當月壽星購買法朋7吋以上慶祝蛋糕即贈送保冷袋（價值＄299）
+                        </p>
+
+                        <div class="f9 mb-3 text-black-50">
+                          <i class="bi bi-calendar2-event align-baseline me-2"></i>2023年07月01日至2024年06月30日止
+                        </div>
+
+                        <div class="container-fluid overflow-hidden px-0">
+                          <div class="row gx-2">
+                            <div class="col-12">
+                              <a href="#" class="w-100 btn btn-black">Read More</a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- 06 -->
+                  <div class="col-sm-4 mb-4">
+                    <div class="card">
+                      <div class="position-relative">
+                        <!-- <div class="position-absolute flagBoxs">限量</div> -->
+                        <img src="images/pic06.png" class="card-img-top">
+                      </div>
+                      <div class="card-body">
+                        <p class="card-text mb-0">Le Ruban Pâtisserie 法朋烘焙甜點坊</p>
+                        <h5 class="card-title text-primary mb-3">當月壽星生日禮</h5>
+
+                        <!-- <div class="mb-2">
+                          <span class="badge label-text me-2">標籤一</span>
+                          <span class="badge label-text">標籤二</span>
+                        </div> -->
+
+                        <p class="card-text cupon-text mb-2">當月壽星購買法朋7吋以上慶祝蛋糕即贈送保冷袋（價值＄299）
+                        </p>
+
+                        <div class="f9 mb-3 text-black-50">
+                          <i class="bi bi-calendar2-event align-baseline me-2"></i>2023年07月01日至2024年06月30日止
+                        </div>
+
+                        <div class="container-fluid overflow-hidden px-0">
+                          <div class="row gx-2">
+                            <div class="col-12">
+                              <a href="#" class="w-100 btn btn-black">Read More</a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- 07 -->
+                  <div class="col-sm-4 mb-4">
+                    <div class="card">
+                      <div class="position-relative">
+                        <!-- <div class="position-absolute flagBoxs">限量</div> -->
+                        <img src="images/pic04.png" class="card-img-top">
+                      </div>
+                      <div class="card-body">
+                        <p class="card-text mb-0">Le Ruban Pâtisserie 法朋烘焙甜點坊</p>
+                        <h5 class="card-title text-primary mb-3">當月壽星生日禮</h5>
+
+                        <!-- <div class="mb-2">
+                          <span class="badge label-text me-2">標籤一</span>
+                          <span class="badge label-text">標籤二</span>
+                        </div> -->
+
+                        <p class="card-text cupon-text mb-2">當月壽星購買法朋7吋以上慶祝蛋糕即贈送保冷袋（價值＄299）
+                        </p>
+
+                        <div class="f9 mb-3 text-black-50">
+                          <i class="bi bi-calendar2-event align-baseline me-2"></i>2023年07月01日至2024年06月30日止
+                        </div>
+
+                        <div class="container-fluid overflow-hidden px-0">
+                          <div class="row gx-2">
+                            <div class="col-12">
+                              <a href="#" class="w-100 btn btn-black">Read More</a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- 08 -->
+                  <div class="col-sm-4 mb-4">
+                    <div class="card">
+                      <div class="position-relative">
+                        <!-- <div class="position-absolute flagBoxs">限量</div> -->
+                        <img src="images/pic05.png" class="card-img-top">
+                      </div>
+                      <div class="card-body">
+                        <p class="card-text mb-0">Le Ruban Pâtisserie 法朋烘焙甜點坊</p>
+                        <h5 class="card-title text-primary mb-3">當月壽星生日禮</h5>
+
+                        <!-- <div class="mb-2">
+                          <span class="badge label-text me-2">標籤一</span>
+                          <span class="badge label-text">標籤二</span>
+                        </div> -->
+
+                        <p class="card-text cupon-text mb-2">當月壽星購買法朋7吋以上慶祝蛋糕即贈送保冷袋（價值＄299）
+                        </p>
+
+                        <div class="f9 mb-3 text-black-50">
+                          <i class="bi bi-calendar2-event align-baseline me-2"></i>2023年07月01日至2024年06月30日止
+                        </div>
+
+                        <div class="container-fluid overflow-hidden px-0">
+                          <div class="row gx-2">
+                            <div class="col-12">
+                              <a href="#" class="w-100 btn btn-black">Read More</a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- 09 -->
+                  <div class="col-sm-4 mb-4">
+                    <div class="card">
+                      <div class="position-relative">
+                        <!-- <div class="position-absolute flagBoxs">限量</div> -->
+                        <img src="images/pic06.png" class="card-img-top">
+                      </div>
+                      <div class="card-body">
+                        <p class="card-text mb-0">Le Ruban Pâtisserie 法朋烘焙甜點坊</p>
+                        <h5 class="card-title text-primary mb-3">當月壽星生日禮</h5>
+
+                        <!-- <div class="mb-2">
+                          <span class="badge label-text me-2">標籤一</span>
+                          <span class="badge label-text">標籤二</span>
+                        </div> -->
+
+                        <p class="card-text cupon-text mb-2">當月壽星購買法朋7吋以上慶祝蛋糕即贈送保冷袋（價值＄299）
+                        </p>
+
+                        <div class="f9 mb-3 text-black-50">
+                          <i class="bi bi-calendar2-event align-baseline me-2"></i>2023年07月01日至2024年06月30日止
+                        </div>
+
+                        <div class="container-fluid overflow-hidden px-0">
+                          <div class="row gx-2">
+                            <div class="col-12">
+                              <a href="#" class="w-100 btn btn-black">Read More</a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-12 text-center">
+                    <button class="btn moreBtn" type="submit">更多優惠</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- 011 -->
+            <div class="tab-pane fade" id="tag02" role="tabpanel" aria-labelledby="tag02-tab">
+              <div class="container-fluid px-lg-0 px-3">
+                <div class="row">
+                  <!-- 01 -->
+                  <div class="col-sm-4 mb-4">
+                    <div class="card">
+                      <div class="position-relative">
+                        <div class="position-absolute flagBoxs">限量</div>
+                        <img src="images/pic01.png" class="card-img-top">
+                      </div>
+                      <div class="card-body">
+                        <p class="card-text mb-0">Le Ruban Pâtisserie 法朋烘焙甜點坊</p>
+                        <h5 class="card-title text-primary mb-3">當月壽星生日禮</h5>
+
+                        <!-- <div class="mb-2">
+                          <span class="badge label-text me-2">標籤一</span>
+                          <span class="badge label-text">標籤二</span>
+                        </div> -->
+
+                        <p class="card-text cupon-text mb-2">當月壽星購買法朋7吋以上慶祝蛋糕即贈送保冷袋（價值＄299）
+                        </p>
+
+                        <div class="f9 mb-3 text-black-50">
+                          <i class="bi bi-calendar2-event align-baseline me-2"></i>2023年07月01日至2024年06月30日止
+                        </div>
+
+                        <div class="container-fluid overflow-hidden px-0">
+                          <div class="row gx-2">
+                            <div class="col-12">
+                              <a href="#" class="w-100 btn btn-black">Read More</a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- 02 -->
+                  <div class="col-sm-4 mb-4">
+                    <div class="card">
+                      <div class="position-relative">
+                        <div class="position-absolute flagBoxs">限量</div>
+                        <img src="images/pic02.png" class="card-img-top">
+                      </div>
+                      <div class="card-body">
+                        <p class="card-text mb-0">Le Ruban Pâtisserie 法朋烘焙甜點坊</p>
+                        <h5 class="card-title text-primary mb-3">尊榮獻禮-法朋老奶奶檸檬蛋糕</h5>
+
+                        <!-- <div class="mb-2">
+                          <span class="badge label-text me-2">標籤一</span>
+                          <span class="badge label-text">標籤二</span>
+                        </div> -->
+
+                        <p class="card-text cupon-text mb-2">贈送老奶奶檸檬蛋糕2片組乙份。（限尊榮會員本人每卡兌換乙次，不可重覆兌換）
+                        </p>
+
+                        <div class="f9 mb-3 text-black-50">
+                          <i class="bi bi-calendar2-event align-baseline me-2"></i>2023年07月01日至2024年06月30日止
+                        </div>
+
+                        <div class="container-fluid overflow-hidden px-0">
+                          <div class="row gx-2">
+                            <div class="col-12">
+                              <a href="#" class="w-100 btn btn-black">Read More</a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- 03 -->
+                  <div class="col-sm-4 mb-4">
+                    <div class="card">
+                      <div class="position-relative">
+                        <!-- <div class="position-absolute flagBoxs">限量</div> -->
+                        <img src="images/pic03.png" class="card-img-top">
+                      </div>
+                      <div class="card-body">
+                        <p class="card-text mb-0">Le Ruban Pâtisserie 法朋烘焙甜點坊</p>
+                        <h5 class="card-title text-primary mb-3">當月壽星生日禮</h5>
+
+                        <!-- <div class="mb-2">
+                          <span class="badge label-text me-2">標籤一</span>
+                          <span class="badge label-text">標籤二</span>
+                        </div> -->
+
+                        <p class="card-text cupon-text mb-2">當月壽星購買法朋7吋以上慶祝蛋糕即贈送保冷袋（價值＄299）
+                        </p>
+
+                        <div class="f9 mb-3 text-black-50">
+                          <i class="bi bi-calendar2-event align-baseline me-2"></i>2023年07月01日至2024年06月30日止
+                        </div>
+
+                        <div class="container-fluid overflow-hidden px-0">
+                          <div class="row gx-2">
+                            <div class="col-12">
+                              <a href="#" class="w-100 btn btn-black">Read More</a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- 04 -->
+                  <div class="col-sm-4 mb-4">
+                    <div class="card">
+                      <div class="position-relative">
+                        <!-- <div class="position-absolute flagBoxs">限量</div> -->
+                        <img src="images/pic04.png" class="card-img-top">
+                      </div>
+                      <div class="card-body">
+                        <p class="card-text mb-0">Le Ruban Pâtisserie 法朋烘焙甜點坊</p>
+                        <h5 class="card-title text-primary mb-3">當月壽星生日禮</h5>
+
+                        <!-- <div class="mb-2">
+                          <span class="badge label-text me-2">標籤一</span>
+                          <span class="badge label-text">標籤二</span>
+                        </div> -->
+
+                        <p class="card-text cupon-text mb-2">當月壽星購買法朋7吋以上慶祝蛋糕即贈送保冷袋（價值＄299）
+                        </p>
+
+                        <div class="f9 mb-3 text-black-50">
+                          <i class="bi bi-calendar2-event align-baseline me-2"></i>2023年07月01日至2024年06月30日止
+                        </div>
+
+                        <div class="container-fluid overflow-hidden px-0">
+                          <div class="row gx-2">
+                            <div class="col-12">
+                              <a href="#" class="w-100 btn btn-black">Read More</a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- 05 -->
+                  <div class="col-sm-4 mb-4">
+                    <div class="card">
+                      <div class="position-relative">
+                        <!-- <div class="position-absolute flagBoxs">限量</div> -->
+                        <img src="images/pic05.png" class="card-img-top">
+                      </div>
+                      <div class="card-body">
+                        <p class="card-text mb-0">Le Ruban Pâtisserie 法朋烘焙甜點坊</p>
+                        <h5 class="card-title text-primary mb-3">當月壽星生日禮</h5>
+
+                        <!-- <div class="mb-2">
+                          <span class="badge label-text me-2">標籤一</span>
+                          <span class="badge label-text">標籤二</span>
+                        </div> -->
+
+                        <p class="card-text cupon-text mb-2">當月壽星購買法朋7吋以上慶祝蛋糕即贈送保冷袋（價值＄299）
+                        </p>
+
+                        <div class="f9 mb-3 text-black-50">
+                          <i class="bi bi-calendar2-event align-baseline me-2"></i>2023年07月01日至2024年06月30日止
+                        </div>
+
+                        <div class="container-fluid overflow-hidden px-0">
+                          <div class="row gx-2">
+                            <div class="col-12">
+                              <a href="#" class="w-100 btn btn-black">Read More</a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- 06 -->
+                  <div class="col-sm-4 mb-4">
+                    <div class="card">
+                      <div class="position-relative">
+                        <!-- <div class="position-absolute flagBoxs">限量</div> -->
+                        <img src="images/pic06.png" class="card-img-top">
+                      </div>
+                      <div class="card-body">
+                        <p class="card-text mb-0">Le Ruban Pâtisserie 法朋烘焙甜點坊</p>
+                        <h5 class="card-title text-primary mb-3">當月壽星生日禮</h5>
+
+                        <!-- <div class="mb-2">
+                          <span class="badge label-text me-2">標籤一</span>
+                          <span class="badge label-text">標籤二</span>
+                        </div> -->
+
+                        <p class="card-text cupon-text mb-2">當月壽星購買法朋7吋以上慶祝蛋糕即贈送保冷袋（價值＄299）
+                        </p>
+
+                        <div class="f9 mb-3 text-black-50">
+                          <i class="bi bi-calendar2-event align-baseline me-2"></i>2023年07月01日至2024年06月30日止
+                        </div>
+
+                        <div class="container-fluid overflow-hidden px-0">
+                          <div class="row gx-2">
+                            <div class="col-12">
+                              <a href="#" class="w-100 btn btn-black">Read More</a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- 07 -->
+                  <div class="col-sm-4 mb-4">
+                    <div class="card">
+                      <div class="position-relative">
+                        <!-- <div class="position-absolute flagBoxs">限量</div> -->
+                        <img src="images/pic04.png" class="card-img-top">
+                      </div>
+                      <div class="card-body">
+                        <p class="card-text mb-0">Le Ruban Pâtisserie 法朋烘焙甜點坊</p>
+                        <h5 class="card-title text-primary mb-3">當月壽星生日禮</h5>
+
+                        <!-- <div class="mb-2">
+                          <span class="badge label-text me-2">標籤一</span>
+                          <span class="badge label-text">標籤二</span>
+                        </div> -->
+
+                        <p class="card-text cupon-text mb-2">當月壽星購買法朋7吋以上慶祝蛋糕即贈送保冷袋（價值＄299）
+                        </p>
+
+                        <div class="f9 mb-3 text-black-50">
+                          <i class="bi bi-calendar2-event align-baseline me-2"></i>2023年07月01日至2024年06月30日止
+                        </div>
+
+                        <div class="container-fluid overflow-hidden px-0">
+                          <div class="row gx-2">
+                            <div class="col-12">
+                              <a href="#" class="w-100 btn btn-black">Read More</a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- <div class="col-12 text-center">
+                    <button class="btn moreBtn" type="submit">更多優惠</button>
+                  </div> -->
+                </div>
+              </div>
+            </div>
+            <!-- 012 -->
+            <div class="tab-pane fade" id="tag03" role="tabpanel" aria-labelledby="tag03-tab">
+              <div class="container-fluid px-lg-0 px-3">
+                <div class="row">
+                  <!-- 01 -->
+                  <div class="col-sm-4 mb-4">
+                    <div class="card">
+                      <div class="position-relative">
+                        <div class="position-absolute flagBoxs">限量</div>
+                        <img src="images/pic01.png" class="card-img-top">
+                      </div>
+                      <div class="card-body">
+                        <p class="card-text mb-0">Le Ruban Pâtisserie 法朋烘焙甜點坊</p>
+                        <h5 class="card-title text-primary mb-3">當月壽星生日禮</h5>
+
+                        <!-- <div class="mb-2">
+                          <span class="badge label-text me-2">標籤一</span>
+                          <span class="badge label-text">標籤二</span>
+                        </div> -->
+
+                        <p class="card-text cupon-text mb-2">當月壽星購買法朋7吋以上慶祝蛋糕即贈送保冷袋（價值＄299）
+                        </p>
+
+                        <div class="f9 mb-3 text-black-50">
+                          <i class="bi bi-calendar2-event align-baseline me-2"></i>2023年07月01日至2024年06月30日止
+                        </div>
+
+                        <div class="container-fluid overflow-hidden px-0">
+                          <div class="row gx-2">
+                            <div class="col-12">
+                              <a href="#" class="w-100 btn btn-black">Read More</a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- 02 -->
+                  <div class="col-sm-4 mb-4">
+                    <div class="card">
+                      <div class="position-relative">
+                        <div class="position-absolute flagBoxs">限量</div>
+                        <img src="images/pic02.png" class="card-img-top">
+                      </div>
+                      <div class="card-body">
+                        <p class="card-text mb-0">Le Ruban Pâtisserie 法朋烘焙甜點坊</p>
+                        <h5 class="card-title text-primary mb-3">尊榮獻禮-法朋老奶奶檸檬蛋糕</h5>
+
+                        <!-- <div class="mb-2">
+                          <span class="badge label-text me-2">標籤一</span>
+                          <span class="badge label-text">標籤二</span>
+                        </div> -->
+
+                        <p class="card-text cupon-text mb-2">贈送老奶奶檸檬蛋糕2片組乙份。（限尊榮會員本人每卡兌換乙次，不可重覆兌換）
+                        </p>
+
+                        <div class="f9 mb-3 text-black-50">
+                          <i class="bi bi-calendar2-event align-baseline me-2"></i>2023年07月01日至2024年06月30日止
+                        </div>
+
+                        <div class="container-fluid overflow-hidden px-0">
+                          <div class="row gx-2">
+                            <div class="col-12">
+                              <a href="#" class="w-100 btn btn-black">Read More</a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- 03 -->
+                  <div class="col-sm-4 mb-4">
+                    <div class="card">
+                      <div class="position-relative">
+                        <!-- <div class="position-absolute flagBoxs">限量</div> -->
+                        <img src="images/pic03.png" class="card-img-top">
+                      </div>
+                      <div class="card-body">
+                        <p class="card-text mb-0">Le Ruban Pâtisserie 法朋烘焙甜點坊</p>
+                        <h5 class="card-title text-primary mb-3">當月壽星生日禮</h5>
+
+                        <!-- <div class="mb-2">
+                          <span class="badge label-text me-2">標籤一</span>
+                          <span class="badge label-text">標籤二</span>
+                        </div> -->
+
+                        <p class="card-text cupon-text mb-2">當月壽星購買法朋7吋以上慶祝蛋糕即贈送保冷袋（價值＄299）
+                        </p>
+
+                        <div class="f9 mb-3 text-black-50">
+                          <i class="bi bi-calendar2-event align-baseline me-2"></i>2023年07月01日至2024年06月30日止
+                        </div>
+
+                        <div class="container-fluid overflow-hidden px-0">
+                          <div class="row gx-2">
+                            <div class="col-12">
+                              <a href="#" class="w-100 btn btn-black">Read More</a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- 04 -->
+                  <div class="col-sm-4 mb-4">
+                    <div class="card">
+                      <div class="position-relative">
+                        <!-- <div class="position-absolute flagBoxs">限量</div> -->
+                        <img src="images/pic04.png" class="card-img-top">
+                      </div>
+                      <div class="card-body">
+                        <p class="card-text mb-0">Le Ruban Pâtisserie 法朋烘焙甜點坊</p>
+                        <h5 class="card-title text-primary mb-3">當月壽星生日禮</h5>
+
+                        <!-- <div class="mb-2">
+                          <span class="badge label-text me-2">標籤一</span>
+                          <span class="badge label-text">標籤二</span>
+                        </div> -->
+
+                        <p class="card-text cupon-text mb-2">當月壽星購買法朋7吋以上慶祝蛋糕即贈送保冷袋（價值＄299）
+                        </p>
+
+                        <div class="f9 mb-3 text-black-50">
+                          <i class="bi bi-calendar2-event align-baseline me-2"></i>2023年07月01日至2024年06月30日止
+                        </div>
+
+                        <div class="container-fluid overflow-hidden px-0">
+                          <div class="row gx-2">
+                            <div class="col-12">
+                              <a href="#" class="w-100 btn btn-black">Read More</a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- 05 -->
+                  <div class="col-sm-4 mb-4">
+                    <div class="card">
+                      <div class="position-relative">
+                        <!-- <div class="position-absolute flagBoxs">限量</div> -->
+                        <img src="images/pic05.png" class="card-img-top">
+                      </div>
+                      <div class="card-body">
+                        <p class="card-text mb-0">Le Ruban Pâtisserie 法朋烘焙甜點坊</p>
+                        <h5 class="card-title text-primary mb-3">當月壽星生日禮</h5>
+
+                        <!-- <div class="mb-2">
+                          <span class="badge label-text me-2">標籤一</span>
+                          <span class="badge label-text">標籤二</span>
+                        </div> -->
+
+                        <p class="card-text cupon-text mb-2">當月壽星購買法朋7吋以上慶祝蛋糕即贈送保冷袋（價值＄299）
+                        </p>
+
+                        <div class="f9 mb-3 text-black-50">
+                          <i class="bi bi-calendar2-event align-baseline me-2"></i>2023年07月01日至2024年06月30日止
+                        </div>
+
+                        <div class="container-fluid overflow-hidden px-0">
+                          <div class="row gx-2">
+                            <div class="col-12">
+                              <a href="#" class="w-100 btn btn-black">Read More</a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- <div class="col-12 text-center">
+                    <button class="btn moreBtn" type="submit">更多優惠</button>
+                  </div> -->
+                </div>
+              </div>
+            </div>
+            <!-- 013 -->
+            <div class="tab-pane fade" id="tag04" role="tabpanel" aria-labelledby="tag04-tab">
+              <div class="container-fluid px-lg-0 px-3">
+                <div class="row">
+                   <!-- 01 -->
+                  <div class="col-sm-4 mb-4">
+                    <div class="card">
+                      <div class="position-relative">
+                        <div class="position-absolute flagBoxs">限量</div>
+                        <img src="images/pic01.png" class="card-img-top">
+                      </div>
+                      <div class="card-body">
+                        <p class="card-text mb-0">Le Ruban Pâtisserie 法朋烘焙甜點坊</p>
+                        <h5 class="card-title text-primary mb-3">當月壽星生日禮</h5>
+
+                        <!-- <div class="mb-2">
+                          <span class="badge label-text me-2">標籤一</span>
+                          <span class="badge label-text">標籤二</span>
+                        </div> -->
+
+                        <p class="card-text cupon-text mb-2">當月壽星購買法朋7吋以上慶祝蛋糕即贈送保冷袋（價值＄299）
+                        </p>
+
+                        <div class="f9 mb-3 text-black-50">
+                          <i class="bi bi-calendar2-event align-baseline me-2"></i>2023年07月01日至2024年06月30日止
+                        </div>
+
+                        <div class="container-fluid overflow-hidden px-0">
+                          <div class="row gx-2">
+                            <div class="col-12">
+                              <a href="#" class="w-100 btn btn-black">Read More</a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- 02 -->
+                  <div class="col-sm-4 mb-4">
+                    <div class="card">
+                      <div class="position-relative">
+                        <div class="position-absolute flagBoxs">限量</div>
+                        <img src="images/pic02.png" class="card-img-top">
+                      </div>
+                      <div class="card-body">
+                        <p class="card-text mb-0">Le Ruban Pâtisserie 法朋烘焙甜點坊</p>
+                        <h5 class="card-title text-primary mb-3">尊榮獻禮-法朋老奶奶檸檬蛋糕</h5>
+
+                        <!-- <div class="mb-2">
+                          <span class="badge label-text me-2">標籤一</span>
+                          <span class="badge label-text">標籤二</span>
+                        </div> -->
+
+                        <p class="card-text cupon-text mb-2">贈送老奶奶檸檬蛋糕2片組乙份。（限尊榮會員本人每卡兌換乙次，不可重覆兌換）
+                        </p>
+
+                        <div class="f9 mb-3 text-black-50">
+                          <i class="bi bi-calendar2-event align-baseline me-2"></i>2023年07月01日至2024年06月30日止
+                        </div>
+
+                        <div class="container-fluid overflow-hidden px-0">
+                          <div class="row gx-2">
+                            <div class="col-12">
+                              <a href="#" class="w-100 btn btn-black">Read More</a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- 03 -->
+                  <div class="col-sm-4 mb-4">
+                    <div class="card">
+                      <div class="position-relative">
+                        <!-- <div class="position-absolute flagBoxs">限量</div> -->
+                        <img src="images/pic03.png" class="card-img-top">
+                      </div>
+                      <div class="card-body">
+                        <p class="card-text mb-0">Le Ruban Pâtisserie 法朋烘焙甜點坊</p>
+                        <h5 class="card-title text-primary mb-3">當月壽星生日禮</h5>
+
+                        <!-- <div class="mb-2">
+                          <span class="badge label-text me-2">標籤一</span>
+                          <span class="badge label-text">標籤二</span>
+                        </div> -->
+
+                        <p class="card-text cupon-text mb-2">當月壽星購買法朋7吋以上慶祝蛋糕即贈送保冷袋（價值＄299）
+                        </p>
+
+                        <div class="f9 mb-3 text-black-50">
+                          <i class="bi bi-calendar2-event align-baseline me-2"></i>2023年07月01日至2024年06月30日止
+                        </div>
+
+                        <div class="container-fluid overflow-hidden px-0">
+                          <div class="row gx-2">
+                            <div class="col-12">
+                              <a href="#" class="w-100 btn btn-black">Read More</a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- 04 -->
+                  <div class="col-sm-4 mb-4">
+                    <div class="card">
+                      <div class="position-relative">
+                        <!-- <div class="position-absolute flagBoxs">限量</div> -->
+                        <img src="images/pic04.png" class="card-img-top">
+                      </div>
+                      <div class="card-body">
+                        <p class="card-text mb-0">Le Ruban Pâtisserie 法朋烘焙甜點坊</p>
+                        <h5 class="card-title text-primary mb-3">當月壽星生日禮</h5>
+
+                        <!-- <div class="mb-2">
+                          <span class="badge label-text me-2">標籤一</span>
+                          <span class="badge label-text">標籤二</span>
+                        </div> -->
+
+                        <p class="card-text cupon-text mb-2">當月壽星購買法朋7吋以上慶祝蛋糕即贈送保冷袋（價值＄299）
+                        </p>
+
+                        <div class="f9 mb-3 text-black-50">
+                          <i class="bi bi-calendar2-event align-baseline me-2"></i>2023年07月01日至2024年06月30日止
+                        </div>
+
+                        <div class="container-fluid overflow-hidden px-0">
+                          <div class="row gx-2">
+                            <div class="col-12">
+                              <a href="#" class="w-100 btn btn-black">Read More</a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- 05 -->
+                  <div class="col-sm-4 mb-4">
+                    <div class="card">
+                      <div class="position-relative">
+                        <!-- <div class="position-absolute flagBoxs">限量</div> -->
+                        <img src="images/pic05.png" class="card-img-top">
+                      </div>
+                      <div class="card-body">
+                        <p class="card-text mb-0">Le Ruban Pâtisserie 法朋烘焙甜點坊</p>
+                        <h5 class="card-title text-primary mb-3">當月壽星生日禮</h5>
+
+                        <!-- <div class="mb-2">
+                          <span class="badge label-text me-2">標籤一</span>
+                          <span class="badge label-text">標籤二</span>
+                        </div> -->
+
+                        <p class="card-text cupon-text mb-2">當月壽星購買法朋7吋以上慶祝蛋糕即贈送保冷袋（價值＄299）
+                        </p>
+
+                        <div class="f9 mb-3 text-black-50">
+                          <i class="bi bi-calendar2-event align-baseline me-2"></i>2023年07月01日至2024年06月30日止
+                        </div>
+
+                        <div class="container-fluid overflow-hidden px-0">
+                          <div class="row gx-2">
+                            <div class="col-12">
+                              <a href="#" class="w-100 btn btn-black">Read More</a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- <div class="col-12 text-center">
+                    <button class="btn moreBtn" type="submit">更多優惠</button>
+                  </div> -->
+                </div>
+              </div>
+            </div>
+            <!-- 014 -->
+            <div class="tab-pane fade" id="tag05" role="tabpanel" aria-labelledby="tag05-tab">
+              <div class="container-fluid px-lg-0 px-3">
+                <div class="row">
+                  <!-- 01 -->
+                  <div class="col-sm-4 mb-4">
+                    <div class="card">
+                      <div class="position-relative">
+                        <div class="position-absolute flagBoxs">限量</div>
+                        <img src="images/pic01.png" class="card-img-top">
+                      </div>
+                      <div class="card-body">
+                        <p class="card-text mb-0">Le Ruban Pâtisserie 法朋烘焙甜點坊</p>
+                        <h5 class="card-title text-primary mb-3">當月壽星生日禮</h5>
+
+                        <!-- <div class="mb-2">
+                          <span class="badge label-text me-2">標籤一</span>
+                          <span class="badge label-text">標籤二</span>
+                        </div> -->
+
+                        <p class="card-text cupon-text mb-2">當月壽星購買法朋7吋以上慶祝蛋糕即贈送保冷袋（價值＄299）
+                        </p>
+
+                        <div class="f9 mb-3 text-black-50">
+                          <i class="bi bi-calendar2-event align-baseline me-2"></i>2023年07月01日至2024年06月30日止
+                        </div>
+
+                        <div class="container-fluid overflow-hidden px-0">
+                          <div class="row gx-2">
+                            <div class="col-12">
+                              <a href="#" class="w-100 btn btn-black">Read More</a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- 02 -->
+                  <div class="col-sm-4 mb-4">
+                    <div class="card">
+                      <div class="position-relative">
+                        <div class="position-absolute flagBoxs">限量</div>
+                        <img src="images/pic02.png" class="card-img-top">
+                      </div>
+                      <div class="card-body">
+                        <p class="card-text mb-0">Le Ruban Pâtisserie 法朋烘焙甜點坊</p>
+                        <h5 class="card-title text-primary mb-3">尊榮獻禮-法朋老奶奶檸檬蛋糕</h5>
+
+                        <!-- <div class="mb-2">
+                          <span class="badge label-text me-2">標籤一</span>
+                          <span class="badge label-text">標籤二</span>
+                        </div> -->
+
+                        <p class="card-text cupon-text mb-2">贈送老奶奶檸檬蛋糕2片組乙份。（限尊榮會員本人每卡兌換乙次，不可重覆兌換）
+                        </p>
+
+                        <div class="f9 mb-3 text-black-50">
+                          <i class="bi bi-calendar2-event align-baseline me-2"></i>2023年07月01日至2024年06月30日止
+                        </div>
+
+                        <div class="container-fluid overflow-hidden px-0">
+                          <div class="row gx-2">
+                            <div class="col-12">
+                              <a href="#" class="w-100 btn btn-black">Read More</a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- 03 -->
+                  <div class="col-sm-4 mb-4">
+                    <div class="card">
+                      <div class="position-relative">
+                        <!-- <div class="position-absolute flagBoxs">限量</div> -->
+                        <img src="images/pic03.png" class="card-img-top">
+                      </div>
+                      <div class="card-body">
+                        <p class="card-text mb-0">Le Ruban Pâtisserie 法朋烘焙甜點坊</p>
+                        <h5 class="card-title text-primary mb-3">當月壽星生日禮</h5>
+
+                        <!-- <div class="mb-2">
+                          <span class="badge label-text me-2">標籤一</span>
+                          <span class="badge label-text">標籤二</span>
+                        </div> -->
+
+                        <p class="card-text cupon-text mb-2">當月壽星購買法朋7吋以上慶祝蛋糕即贈送保冷袋（價值＄299）
+                        </p>
+
+                        <div class="f9 mb-3 text-black-50">
+                          <i class="bi bi-calendar2-event align-baseline me-2"></i>2023年07月01日至2024年06月30日止
+                        </div>
+
+                        <div class="container-fluid overflow-hidden px-0">
+                          <div class="row gx-2">
+                            <div class="col-12">
+                              <a href="#" class="w-100 btn btn-black">Read More</a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- 04 -->
+                  <div class="col-sm-4 mb-4">
+                    <div class="card">
+                      <div class="position-relative">
+                        <!-- <div class="position-absolute flagBoxs">限量</div> -->
+                        <img src="images/pic04.png" class="card-img-top">
+                      </div>
+                      <div class="card-body">
+                        <p class="card-text mb-0">Le Ruban Pâtisserie 法朋烘焙甜點坊</p>
+                        <h5 class="card-title text-primary mb-3">當月壽星生日禮</h5>
+
+                        <!-- <div class="mb-2">
+                          <span class="badge label-text me-2">標籤一</span>
+                          <span class="badge label-text">標籤二</span>
+                        </div> -->
+
+                        <p class="card-text cupon-text mb-2">當月壽星購買法朋7吋以上慶祝蛋糕即贈送保冷袋（價值＄299）
+                        </p>
+
+                        <div class="f9 mb-3 text-black-50">
+                          <i class="bi bi-calendar2-event align-baseline me-2"></i>2023年07月01日至2024年06月30日止
+                        </div>
+
+                        <div class="container-fluid overflow-hidden px-0">
+                          <div class="row gx-2">
+                            <div class="col-12">
+                              <a href="#" class="w-100 btn btn-black">Read More</a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- 05 -->
+                  <div class="col-sm-4 mb-4">
+                    <div class="card">
+                      <div class="position-relative">
+                        <!-- <div class="position-absolute flagBoxs">限量</div> -->
+                        <img src="images/pic05.png" class="card-img-top">
+                      </div>
+                      <div class="card-body">
+                        <p class="card-text mb-0">Le Ruban Pâtisserie 法朋烘焙甜點坊</p>
+                        <h5 class="card-title text-primary mb-3">當月壽星生日禮</h5>
+
+                        <!-- <div class="mb-2">
+                          <span class="badge label-text me-2">標籤一</span>
+                          <span class="badge label-text">標籤二</span>
+                        </div> -->
+
+                        <p class="card-text cupon-text mb-2">當月壽星購買法朋7吋以上慶祝蛋糕即贈送保冷袋（價值＄299）
+                        </p>
+
+                        <div class="f9 mb-3 text-black-50">
+                          <i class="bi bi-calendar2-event align-baseline me-2"></i>2023年07月01日至2024年06月30日止
+                        </div>
+
+                        <div class="container-fluid overflow-hidden px-0">
+                          <div class="row gx-2">
+                            <div class="col-12">
+                              <a href="#" class="w-100 btn btn-black">Read More</a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-12 text-center">
+                    <button class="btn moreBtn" type="submit">更多優惠</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- 015 -->
+            <div class="tab-pane fade" id="tag06" role="tabpanel" aria-labelledby="tag06-tab">
+              <div class="container-fluid px-lg-0 px-3">
+                <div class="row">
+                  <!-- 01 -->
+                  <div class="col-sm-4 mb-4">
+                    <div class="card">
+                      <div class="position-relative">
+                        <div class="position-absolute flagBoxs">限量</div>
+                        <img src="images/pic01.png" class="card-img-top">
+                      </div>
+                      <div class="card-body">
+                        <p class="card-text mb-0">Le Ruban Pâtisserie 法朋烘焙甜點坊</p>
+                        <h5 class="card-title text-primary mb-3">當月壽星生日禮</h5>
+
+                        <!-- <div class="mb-2">
+                          <span class="badge label-text me-2">標籤一</span>
+                          <span class="badge label-text">標籤二</span>
+                        </div> -->
+
+                        <p class="card-text cupon-text mb-2">當月壽星購買法朋7吋以上慶祝蛋糕即贈送保冷袋（價值＄299）
+                        </p>
+
+                        <div class="f9 mb-3 text-black-50">
+                          <i class="bi bi-calendar2-event align-baseline me-2"></i>2023年07月01日至2024年06月30日止
+                        </div>
+
+                        <div class="container-fluid overflow-hidden px-0">
+                          <div class="row gx-2">
+                            <div class="col-12">
+                              <a href="#" class="w-100 btn btn-black">Read More</a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- 02 -->
+                  <div class="col-sm-4 mb-4">
+                    <div class="card">
+                      <div class="position-relative">
+                        <div class="position-absolute flagBoxs">限量</div>
+                        <img src="images/pic02.png" class="card-img-top">
+                      </div>
+                      <div class="card-body">
+                        <p class="card-text mb-0">Le Ruban Pâtisserie 法朋烘焙甜點坊</p>
+                        <h5 class="card-title text-primary mb-3">尊榮獻禮-法朋老奶奶檸檬蛋糕</h5>
+
+                        <!-- <div class="mb-2">
+                          <span class="badge label-text me-2">標籤一</span>
+                          <span class="badge label-text">標籤二</span>
+                        </div> -->
+
+                        <p class="card-text cupon-text mb-2">贈送老奶奶檸檬蛋糕2片組乙份。（限尊榮會員本人每卡兌換乙次，不可重覆兌換）
+                        </p>
+
+                        <div class="f9 mb-3 text-black-50">
+                          <i class="bi bi-calendar2-event align-baseline me-2"></i>2023年07月01日至2024年06月30日止
+                        </div>
+
+                        <div class="container-fluid overflow-hidden px-0">
+                          <div class="row gx-2">
+                            <div class="col-12">
+                              <a href="#" class="w-100 btn btn-black">Read More</a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- 03 -->
+                  <div class="col-sm-4 mb-4">
+                    <div class="card">
+                      <div class="position-relative">
+                        <!-- <div class="position-absolute flagBoxs">限量</div> -->
+                        <img src="images/pic03.png" class="card-img-top">
+                      </div>
+                      <div class="card-body">
+                        <p class="card-text mb-0">Le Ruban Pâtisserie 法朋烘焙甜點坊</p>
+                        <h5 class="card-title text-primary mb-3">當月壽星生日禮</h5>
+
+                        <!-- <div class="mb-2">
+                          <span class="badge label-text me-2">標籤一</span>
+                          <span class="badge label-text">標籤二</span>
+                        </div> -->
+
+                        <p class="card-text cupon-text mb-2">當月壽星購買法朋7吋以上慶祝蛋糕即贈送保冷袋（價值＄299）
+                        </p>
+
+                        <div class="f9 mb-3 text-black-50">
+                          <i class="bi bi-calendar2-event align-baseline me-2"></i>2023年07月01日至2024年06月30日止
+                        </div>
+
+                        <div class="container-fluid overflow-hidden px-0">
+                          <div class="row gx-2">
+                            <div class="col-12">
+                              <a href="#" class="w-100 btn btn-black">Read More</a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- 04 -->
+                  <div class="col-sm-4 mb-4">
+                    <div class="card">
+                      <div class="position-relative">
+                        <!-- <div class="position-absolute flagBoxs">限量</div> -->
+                        <img src="images/pic04.png" class="card-img-top">
+                      </div>
+                      <div class="card-body">
+                        <p class="card-text mb-0">Le Ruban Pâtisserie 法朋烘焙甜點坊</p>
+                        <h5 class="card-title text-primary mb-3">當月壽星生日禮</h5>
+
+                        <!-- <div class="mb-2">
+                          <span class="badge label-text me-2">標籤一</span>
+                          <span class="badge label-text">標籤二</span>
+                        </div> -->
+
+                        <p class="card-text cupon-text mb-2">當月壽星購買法朋7吋以上慶祝蛋糕即贈送保冷袋（價值＄299）
+                        </p>
+
+                        <div class="f9 mb-3 text-black-50">
+                          <i class="bi bi-calendar2-event align-baseline me-2"></i>2023年07月01日至2024年06月30日止
+                        </div>
+
+                        <div class="container-fluid overflow-hidden px-0">
+                          <div class="row gx-2">
+                            <div class="col-12">
+                              <a href="#" class="w-100 btn btn-black">Read More</a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- 05 -->
+                  <div class="col-sm-4 mb-4">
+                    <div class="card">
+                      <div class="position-relative">
+                        <!-- <div class="position-absolute flagBoxs">限量</div> -->
+                        <img src="images/pic05.png" class="card-img-top">
+                      </div>
+                      <div class="card-body">
+                        <p class="card-text mb-0">Le Ruban Pâtisserie 法朋烘焙甜點坊</p>
+                        <h5 class="card-title text-primary mb-3">當月壽星生日禮</h5>
+
+                        <!-- <div class="mb-2">
+                          <span class="badge label-text me-2">標籤一</span>
+                          <span class="badge label-text">標籤二</span>
+                        </div> -->
+
+                        <p class="card-text cupon-text mb-2">當月壽星購買法朋7吋以上慶祝蛋糕即贈送保冷袋（價值＄299）
+                        </p>
+
+                        <div class="f9 mb-3 text-black-50">
+                          <i class="bi bi-calendar2-event align-baseline me-2"></i>2023年07月01日至2024年06月30日止
+                        </div>
+
+                        <div class="container-fluid overflow-hidden px-0">
+                          <div class="row gx-2">
+                            <div class="col-12">
+                              <a href="#" class="w-100 btn btn-black">Read More</a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- <div class="col-12 text-center">
+                    <button class="btn moreBtn" type="submit">更多優惠</button>
+                  </div> -->
+                </div>
+              </div>
+            </div>
+            <!-- 016 -->
+            <div class="tab-pane fade" id="tag07" role="tabpanel" aria-labelledby="tag07-tab">
+              <div class="container-fluid px-lg-0 px-3">
+                <div class="row">
+                  
+                </div>
+              </div>
+            </div>
+            <!-- 017 -->
+            <div class="tab-pane fade" id="tag08" role="tabpanel" aria-labelledby="tag08-tab">
+              <div class="container-fluid px-lg-0 px-3">
+                <div class="row">
+                  
+                </div>
+              </div>
+            </div>
+            <!-- 018 -->
+            <div class="tab-pane fade" id="tag09" role="tabpanel" aria-labelledby="tag09-tab">
+              <div class="container-fluid px-lg-0 px-3">
+                <div class="row">
+                  
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 02 list 我的優惠 -->
+        <!-- <div class="tab-pane fade" id="my-ticket" role="tabpanel" aria-labelledby="my-ticket-tab"> -->
+        <div class="tab-pane fade" id="my-ticket" role="tablist">
+          <div class="my-4 fs-4">
+            <!-- 02 是否已兌換的類別 -->
+            <ul class="nav w990 nav-pills nav-fill" id="pills-tab" role="tablist">
+              <!-- 200 -->
+              <li class="nav-item border-end" role="presentation">
+                <div class="nav-link tag-link-login active" id="tag210-tab" data-bs-toggle="pill" data-bs-target="#tag210" role="tab" aria-controls="tag210" aria-selected="true">專屬優惠</div>
+              </li>
+              <!-- 210 -->
+              <li class="nav-item border-end" role="presentation">
+                <div class="nav-link tag-link-login" id="tag220-tab" data-bs-toggle="pill" data-bs-target="#tag220" role="tab" aria-controls="tag220" aria-selected="false">可使用</div>
+              </li>
+              <!-- 220 -->
+              <li class="nav-item border-end" role="presentation">
+                <div class="nav-link tag-link-login" id="tag230-tab" data-bs-toggle="pill" data-bs-target="#tag230" role="tab" aria-controls="tag230" aria-selected="false">已兌換</div>
+              </li>
+              <!-- 230 -->
+              <li class="nav-item" role="presentation">
+                <div class="nav-link tag-link-login" id="tag240-tab" data-bs-toggle="pill" data-bs-target="#tag240" role="tab" aria-controls="tag240" aria-selected="false">已失效</div>
+              </li>
+            </ul>
+          </div>
+
+          <div class="tab-content" id="my-ticket">
+            <!-- 210 list類別：專屬優惠  -->
+            <div class="tab-pane fade show active" id="tag210" role="tabpanel" aria-labelledby="tag210-tab">
+              <div class="navboxs">
+                  <div class="w990 px-2 fs-4 swiper swiper-tag">
+                    <!-- 210 list類別：專屬優惠 -->
+                    <div class="swiper-wrapper swiper-wrapper-tag nav nav-pills" id="pills-tab" role="tablist" style="flex-wrap: nowrap;">
+                      <!-- 211 -->
+                      <button class="swiper-slide swiper-slide-tag nav-link tag-link active" id="tag211-tab" data-bs-toggle="pill" data-bs-target="#tag211" role="tab" aria-controls="tag211" aria-selected="true">全部</button>
+                      <!-- 212 -->
+                      <button class="swiper-slide swiper-slide-tag nav-link tag-link" id="tag212-tab" data-bs-toggle="pill" data-bs-target="#tag212" role="tab" aria-controls="tag212" aria-selected="false">限量優惠</button>
+                      <!-- 213 -->
+                      <button class="swiper-slide swiper-slide-tag nav-link tag-link" id="tag213-tab" data-bs-toggle="pill" data-bs-target="#tag213" role="tab" aria-controls="tag213" aria-selected="false">渡假休閒</button>
+                      <!-- 214 -->
+                      <button class="swiper-slide swiper-slide-tag nav-link tag-link" id="tag214-tab" data-bs-toggle="pill" data-bs-target="#tag214" role="tab" aria-controls="tag214" aria-selected="false">美饌饗宴</button>
+                      <!-- 215 -->
+                      <button class="swiper-slide swiper-slide-tag nav-link tag-link" id="tag215-tab" data-bs-toggle="pill" data-bs-target="#tag215" role="tab" aria-controls="tag215" aria-selected="false">極致生活</button>
+                      <!-- 216 -->
+                      <button class="swiper-slide swiper-slide-tag nav-link tag-link" id="tag216-tab" data-bs-toggle="pill" data-bs-target="#tag216" role="tab" aria-controls="tag216" aria-selected="false">Lexus 原廠專屬優惠</button>
+                      <!-- 217 -->
+                      <button class="swiper-slide swiper-slide-tag nav-link tag-link" id="tag217-tab" data-bs-toggle="pill" data-bs-target="#tag217" role="tab" aria-controls="tag217" aria-selected="false"></button>
+                      <!-- 218 -->
+                      <button class="swiper-slide swiper-slide-tag nav-link tag-link" id="tag218-tab" data-bs-toggle="pill" data-bs-target="#tag218" role="tab" aria-controls="tag218" aria-selected="false"></button>
+                      <!-- 219 -->
+                      <button class="swiper-slide swiper-slide-tag nav-link tag-link" id="tag219-tab" data-bs-toggle="pill" data-bs-target="#tag219" role="tab" aria-controls="tag219" aria-selected="false"></button>
+                    </div>
+                    <div class="swiper-button-prev swiper-button-prev-tag"></div>
+                    <div class="swiper-button-next swiper-button-next-tag"></div>
+                  </div>
+              </div>
+      
+              <div class="mainboxs w990 mt-4">
+                <div class="tab-content" id="pills-tabContent">
+                  <!-- 211 專屬優惠 -->
+                  <div class="tab-pane fade show active" id="tag211" role="tabpanel" aria-labelledby="tag211-tab">
+                    <div class="container-fluid px-lg-0 px-3">
+                      <div class="row">
+                        <!-- 01 -->
+                        <div class="col-sm-4 mb-4">
+                          <div class="card">
+                            <div class="position-relative">
+                              <div class="position-absolute flagBoxs">限量</div>
+                              <img src="images/pic01.png" class="card-img-top">
+                            </div>
+                            <div class="card-body">
+                              <p class="card-text mb-0">Le Ruban Pâtisserie 法朋烘焙甜點坊</p>
+                              <h5 class="card-title text-primary mb-3">當月壽星生日禮</h5>
+
+                              <!-- <div class="mb-2">
+                                <span class="badge label-text me-2">標籤一</span>
+                                <span class="badge label-text">標籤二</span>
+                              </div> -->
+
+                              <p class="card-text cupon-text mb-2">當月壽星購買法朋7吋以上慶祝蛋糕即贈送保冷袋（價值＄299）
+                              </p>
+
+                              <div class="f9 mb-3 text-black-50">
+                                <i class="bi bi-calendar2-event align-baseline me-2"></i>2023年07月01日至2024年06月30日止
+                              </div>
+
+                              <div class="container-fluid overflow-hidden px-0">
+                                <div class="row gx-2">
+                                  <div class="col-12">
+                                    <a href="#" class="w-100 btn btn-black">Read More</a>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <!-- 02 -->
+                        <div class="col-sm-4 mb-4">
+                          <div class="card">
+                            <div class="position-relative">
+                              <div class="position-absolute flagBoxs">限量</div>
+                              <img src="images/pic02.png" class="card-img-top">
+                            </div>
+                            <div class="card-body">
+                              <p class="card-text mb-0">Le Ruban Pâtisserie 法朋烘焙甜點坊</p>
+                              <h5 class="card-title text-primary mb-3">尊榮獻禮-法朋老奶奶檸檬蛋糕</h5>
+
+                              <!-- <div class="mb-2">
+                                <span class="badge label-text me-2">標籤一</span>
+                                <span class="badge label-text">標籤二</span>
+                              </div> -->
+
+                              <p class="card-text cupon-text mb-2">贈送老奶奶檸檬蛋糕2片組乙份。（限尊榮會員本人每卡兌換乙次，不可重覆兌換）
+                              </p>
+
+                              <div class="f9 mb-3 text-black-50">
+                                <i class="bi bi-calendar2-event align-baseline me-2"></i>2023年07月01日至2024年06月30日止
+                              </div>
+
+                              <div class="container-fluid overflow-hidden px-0">
+                                <div class="row gx-2">
+                                  <div class="col-12">
+                                    <a href="#" class="w-100 btn btn-black">Read More</a>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <!-- 03 -->
+                        <div class="col-sm-4 mb-4">
+                          <div class="card">
+                            <div class="position-relative">
+                              <!-- <div class="position-absolute flagBoxs">限量</div> -->
+                              <img src="images/pic03.png" class="card-img-top">
+                            </div>
+                            <div class="card-body">
+                              <p class="card-text mb-0">Le Ruban Pâtisserie 法朋烘焙甜點坊</p>
+                              <h5 class="card-title text-primary mb-3">當月壽星生日禮</h5>
+
+                              <!-- <div class="mb-2">
+                                <span class="badge label-text me-2">標籤一</span>
+                                <span class="badge label-text">標籤二</span>
+                              </div> -->
+
+                              <p class="card-text cupon-text mb-2">當月壽星購買法朋7吋以上慶祝蛋糕即贈送保冷袋（價值＄299）
+                              </p>
+
+                              <div class="f9 mb-3 text-black-50">
+                                <i class="bi bi-calendar2-event align-baseline me-2"></i>2023年07月01日至2024年06月30日止
+                              </div>
+
+                              <div class="container-fluid overflow-hidden px-0">
+                                <div class="row gx-2">
+                                  <div class="col-12">
+                                    <a href="#" class="w-100 btn btn-black">Read More</a>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <!-- 04 -->
+                        <div class="col-sm-4 mb-4">
+                          <div class="card">
+                            <div class="position-relative">
+                              <!-- <div class="position-absolute flagBoxs">限量</div> -->
+                              <img src="images/pic04.png" class="card-img-top">
+                            </div>
+                            <div class="card-body">
+                              <p class="card-text mb-0">Le Ruban Pâtisserie 法朋烘焙甜點坊</p>
+                              <h5 class="card-title text-primary mb-3">當月壽星生日禮</h5>
+
+                              <!-- <div class="mb-2">
+                                <span class="badge label-text me-2">標籤一</span>
+                                <span class="badge label-text">標籤二</span>
+                              </div> -->
+
+                              <p class="card-text cupon-text mb-2">當月壽星購買法朋7吋以上慶祝蛋糕即贈送保冷袋（價值＄299）
+                              </p>
+
+                              <div class="f9 mb-3 text-black-50">
+                                <i class="bi bi-calendar2-event align-baseline me-2"></i>2023年07月01日至2024年06月30日止
+                              </div>
+
+                              <div class="container-fluid overflow-hidden px-0">
+                                <div class="row gx-2">
+                                  <div class="col-12">
+                                    <a href="#" class="w-100 btn btn-black">Read More</a>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <!-- 05 -->
+                        <div class="col-sm-4 mb-4">
+                          <div class="card">
+                            <div class="position-relative">
+                              <!-- <div class="position-absolute flagBoxs">限量</div> -->
+                              <img src="images/pic05.png" class="card-img-top">
+                            </div>
+                            <div class="card-body">
+                              <p class="card-text mb-0">Le Ruban Pâtisserie 法朋烘焙甜點坊</p>
+                              <h5 class="card-title text-primary mb-3">當月壽星生日禮</h5>
+
+                              <!-- <div class="mb-2">
+                                <span class="badge label-text me-2">標籤一</span>
+                                <span class="badge label-text">標籤二</span>
+                              </div> -->
+
+                              <p class="card-text cupon-text mb-2">當月壽星購買法朋7吋以上慶祝蛋糕即贈送保冷袋（價值＄299）
+                              </p>
+
+                              <div class="f9 mb-3 text-black-50">
+                                <i class="bi bi-calendar2-event align-baseline me-2"></i>2023年07月01日至2024年06月30日止
+                              </div>
+
+                              <div class="container-fluid overflow-hidden px-0">
+                                <div class="row gx-2">
+                                  <div class="col-12">
+                                    <a href="#" class="w-100 btn btn-black">Read More</a>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <!-- 06 -->
+                        <div class="col-sm-4 mb-4">
+                          <div class="card">
+                            <div class="position-relative">
+                              <!-- <div class="position-absolute flagBoxs">限量</div> -->
+                              <img src="images/pic06.png" class="card-img-top">
+                            </div>
+                            <div class="card-body">
+                              <p class="card-text mb-0">Le Ruban Pâtisserie 法朋烘焙甜點坊</p>
+                              <h5 class="card-title text-primary mb-3">當月壽星生日禮</h5>
+
+                              <!-- <div class="mb-2">
+                                <span class="badge label-text me-2">標籤一</span>
+                                <span class="badge label-text">標籤二</span>
+                              </div> -->
+
+                              <p class="card-text cupon-text mb-2">當月壽星購買法朋7吋以上慶祝蛋糕即贈送保冷袋（價值＄299）
+                              </p>
+
+                              <div class="f9 mb-3 text-black-50">
+                                <i class="bi bi-calendar2-event align-baseline me-2"></i>2023年07月01日至2024年06月30日止
+                              </div>
+
+                              <div class="container-fluid overflow-hidden px-0">
+                                <div class="row gx-2">
+                                  <div class="col-12">
+                                    <a href="#" class="w-100 btn btn-black">Read More</a>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <!-- 07 -->
+                        <div class="col-sm-4 mb-4">
+                          <div class="card">
+                            <div class="position-relative">
+                              <!-- <div class="position-absolute flagBoxs">限量</div> -->
+                              <img src="images/pic04.png" class="card-img-top">
+                            </div>
+                            <div class="card-body">
+                              <p class="card-text mb-0">Le Ruban Pâtisserie 法朋烘焙甜點坊</p>
+                              <h5 class="card-title text-primary mb-3">當月壽星生日禮</h5>
+
+                              <!-- <div class="mb-2">
+                                <span class="badge label-text me-2">標籤一</span>
+                                <span class="badge label-text">標籤二</span>
+                              </div> -->
+
+                              <p class="card-text cupon-text mb-2">當月壽星購買法朋7吋以上慶祝蛋糕即贈送保冷袋（價值＄299）
+                              </p>
+
+                              <div class="f9 mb-3 text-black-50">
+                                <i class="bi bi-calendar2-event align-baseline me-2"></i>2023年07月01日至2024年06月30日止
+                              </div>
+
+                              <div class="container-fluid overflow-hidden px-0">
+                                <div class="row gx-2">
+                                  <div class="col-12">
+                                    <a href="#" class="w-100 btn btn-black">Read More</a>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <!-- 08 -->
+                        <div class="col-sm-4 mb-4">
+                          <div class="card">
+                            <div class="position-relative">
+                              <!-- <div class="position-absolute flagBoxs">限量</div> -->
+                              <img src="images/pic05.png" class="card-img-top">
+                            </div>
+                            <div class="card-body">
+                              <p class="card-text mb-0">Le Ruban Pâtisserie 法朋烘焙甜點坊</p>
+                              <h5 class="card-title text-primary mb-3">當月壽星生日禮</h5>
+
+                              <!-- <div class="mb-2">
+                                <span class="badge label-text me-2">標籤一</span>
+                                <span class="badge label-text">標籤二</span>
+                              </div> -->
+
+                              <p class="card-text cupon-text mb-2">當月壽星購買法朋7吋以上慶祝蛋糕即贈送保冷袋（價值＄299）
+                              </p>
+
+                              <div class="f9 mb-3 text-black-50">
+                                <i class="bi bi-calendar2-event align-baseline me-2"></i>2023年07月01日至2024年06月30日止
+                              </div>
+
+                              <div class="container-fluid overflow-hidden px-0">
+                                <div class="row gx-2">
+                                  <div class="col-12">
+                                    <a href="#" class="w-100 btn btn-black">Read More</a>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <!-- 09 -->
+                        <div class="col-sm-4 mb-4">
+                          <div class="card">
+                            <div class="position-relative">
+                              <!-- <div class="position-absolute flagBoxs">限量</div> -->
+                              <img src="images/pic06.png" class="card-img-top">
+                            </div>
+                            <div class="card-body">
+                              <p class="card-text mb-0">Le Ruban Pâtisserie 法朋烘焙甜點坊</p>
+                              <h5 class="card-title text-primary mb-3">當月壽星生日禮</h5>
+
+                              <!-- <div class="mb-2">
+                                <span class="badge label-text me-2">標籤一</span>
+                                <span class="badge label-text">標籤二</span>
+                              </div> -->
+
+                              <p class="card-text cupon-text mb-2">當月壽星購買法朋7吋以上慶祝蛋糕即贈送保冷袋（價值＄299）
+                              </p>
+
+                              <div class="f9 mb-3 text-black-50">
+                                <i class="bi bi-calendar2-event align-baseline me-2"></i>2023年07月01日至2024年06月30日止
+                              </div>
+
+                              <div class="container-fluid overflow-hidden px-0">
+                                <div class="row gx-2">
+                                  <div class="col-12">
+                                    <a href="#" class="w-100 btn btn-black">Read More</a>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+      
+                        <div class="col-12 text-center">
+                          <button class="btn moreBtn" type="submit">更多優惠</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+      
+                  <!-- 212 -->
+                  <div class="tab-pane fade" id="tag212" role="tabpanel" aria-labelledby="tag212-tab">
+                    <div class="container-fluid px-lg-0 px-3">
+                      <div class="row">
+                        <!-- 01 -->
+                        <div class="col-sm-4 mb-4">
+                          <div class="card">
+                            <div class="position-relative">
+                              <div class="position-absolute flagBoxs">限量</div>
+                              <img src="images/pic01.png" class="card-img-top">
+                            </div>
+                            <div class="card-body">
+                              <p class="card-text mb-0">Le Ruban Pâtisserie 法朋烘焙甜點坊</p>
+                              <h5 class="card-title text-primary mb-3">當月壽星生日禮</h5>
+
+                              <!-- <div class="mb-2">
+                                <span class="badge label-text me-2">標籤一</span>
+                                <span class="badge label-text">標籤二</span>
+                              </div> -->
+
+                              <p class="card-text cupon-text mb-2">當月壽星購買法朋7吋以上慶祝蛋糕即贈送保冷袋（價值＄299）
+                              </p>
+
+                              <div class="f9 mb-3 text-black-50">
+                                <i class="bi bi-calendar2-event align-baseline me-2"></i>2023年07月01日至2024年06月30日止
+                              </div>
+
+                              <div class="container-fluid overflow-hidden px-0">
+                                <div class="row gx-2">
+                                  <div class="col-12">
+                                    <a href="#" class="w-100 btn btn-black">Read More</a>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <!-- 02 -->
+                        <div class="col-sm-4 mb-4">
+                          <div class="card">
+                            <div class="position-relative">
+                              <div class="position-absolute flagBoxs">限量</div>
+                              <img src="images/pic02.png" class="card-img-top">
+                            </div>
+                            <div class="card-body">
+                              <p class="card-text mb-0">Le Ruban Pâtisserie 法朋烘焙甜點坊</p>
+                              <h5 class="card-title text-primary mb-3">尊榮獻禮-法朋老奶奶檸檬蛋糕</h5>
+
+                              <!-- <div class="mb-2">
+                                <span class="badge label-text me-2">標籤一</span>
+                                <span class="badge label-text">標籤二</span>
+                              </div> -->
+
+                              <p class="card-text cupon-text mb-2">贈送老奶奶檸檬蛋糕2片組乙份。（限尊榮會員本人每卡兌換乙次，不可重覆兌換）
+                              </p>
+
+                              <div class="f9 mb-3 text-black-50">
+                                <i class="bi bi-calendar2-event align-baseline me-2"></i>2023年07月01日至2024年06月30日止
+                              </div>
+
+                              <div class="container-fluid overflow-hidden px-0">
+                                <div class="row gx-2">
+                                  <div class="col-12">
+                                    <a href="#" class="w-100 btn btn-black">Read More</a>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <!-- 03 -->
+                        <div class="col-sm-4 mb-4">
+                          <div class="card">
+                            <div class="position-relative">
+                              <!-- <div class="position-absolute flagBoxs">限量</div> -->
+                              <img src="images/pic03.png" class="card-img-top">
+                            </div>
+                            <div class="card-body">
+                              <p class="card-text mb-0">Le Ruban Pâtisserie 法朋烘焙甜點坊</p>
+                              <h5 class="card-title text-primary mb-3">當月壽星生日禮</h5>
+
+                              <!-- <div class="mb-2">
+                                <span class="badge label-text me-2">標籤一</span>
+                                <span class="badge label-text">標籤二</span>
+                              </div> -->
+
+                              <p class="card-text cupon-text mb-2">當月壽星購買法朋7吋以上慶祝蛋糕即贈送保冷袋（價值＄299）
+                              </p>
+
+                              <div class="f9 mb-3 text-black-50">
+                                <i class="bi bi-calendar2-event align-baseline me-2"></i>2023年07月01日至2024年06月30日止
+                              </div>
+
+                              <div class="container-fluid overflow-hidden px-0">
+                                <div class="row gx-2">
+                                  <div class="col-12">
+                                    <a href="#" class="w-100 btn btn-black">Read More</a>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <!-- 04 -->
+                        <div class="col-sm-4 mb-4">
+                          <div class="card">
+                            <div class="position-relative">
+                              <!-- <div class="position-absolute flagBoxs">限量</div> -->
+                              <img src="images/pic04.png" class="card-img-top">
+                            </div>
+                            <div class="card-body">
+                              <p class="card-text mb-0">Le Ruban Pâtisserie 法朋烘焙甜點坊</p>
+                              <h5 class="card-title text-primary mb-3">當月壽星生日禮</h5>
+
+                              <!-- <div class="mb-2">
+                                <span class="badge label-text me-2">標籤一</span>
+                                <span class="badge label-text">標籤二</span>
+                              </div> -->
+
+                              <p class="card-text cupon-text mb-2">當月壽星購買法朋7吋以上慶祝蛋糕即贈送保冷袋（價值＄299）
+                              </p>
+
+                              <div class="f9 mb-3 text-black-50">
+                                <i class="bi bi-calendar2-event align-baseline me-2"></i>2023年07月01日至2024年06月30日止
+                              </div>
+
+                              <div class="container-fluid overflow-hidden px-0">
+                                <div class="row gx-2">
+                                  <div class="col-12">
+                                    <a href="#" class="w-100 btn btn-black">Read More</a>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <!-- 05 -->
+                        <div class="col-sm-4 mb-4">
+                          <div class="card">
+                            <div class="position-relative">
+                              <!-- <div class="position-absolute flagBoxs">限量</div> -->
+                              <img src="images/pic05.png" class="card-img-top">
+                            </div>
+                            <div class="card-body">
+                              <p class="card-text mb-0">Le Ruban Pâtisserie 法朋烘焙甜點坊</p>
+                              <h5 class="card-title text-primary mb-3">當月壽星生日禮</h5>
+
+                              <!-- <div class="mb-2">
+                                <span class="badge label-text me-2">標籤一</span>
+                                <span class="badge label-text">標籤二</span>
+                              </div> -->
+
+                              <p class="card-text cupon-text mb-2">當月壽星購買法朋7吋以上慶祝蛋糕即贈送保冷袋（價值＄299）
+                              </p>
+
+                              <div class="f9 mb-3 text-black-50">
+                                <i class="bi bi-calendar2-event align-baseline me-2"></i>2023年07月01日至2024年06月30日止
+                              </div>
+
+                              <div class="container-fluid overflow-hidden px-0">
+                                <div class="row gx-2">
+                                  <div class="col-12">
+                                    <a href="#" class="w-100 btn btn-black">Read More</a>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <!-- 
+                        <div class="col-12 text-center">
+                          <button class="btn moreBtn" type="submit">更多優惠</button>
+                        </div> -->
+                      </div>
+                    </div>
+                  </div>
+      
+                  <!-- 213 -->
+                  <div class="tab-pane fade" id="tag213" role="tabpanel" aria-labelledby="tag213-tab">
+                    <div class="container-fluid px-lg-0 px-3">
+                      <div class="row">
+                        <!-- 01 -->
+                        <div class="col-sm-4 mb-4">
+                          <div class="card">
+                            <div class="position-relative">
+                              <div class="position-absolute flagBoxs">限量</div>
+                              <img src="images/pic01.png" class="card-img-top">
+                            </div>
+                            <div class="card-body">
+                              <p class="card-text mb-0">Le Ruban Pâtisserie 法朋烘焙甜點坊</p>
+                              <h5 class="card-title text-primary mb-3">當月壽星生日禮</h5>
+
+                              <!-- <div class="mb-2">
+                                <span class="badge label-text me-2">標籤一</span>
+                                <span class="badge label-text">標籤二</span>
+                              </div> -->
+
+                              <p class="card-text cupon-text mb-2">當月壽星購買法朋7吋以上慶祝蛋糕即贈送保冷袋（價值＄299）
+                              </p>
+
+                              <div class="f9 mb-3 text-black-50">
+                                <i class="bi bi-calendar2-event align-baseline me-2"></i>2023年07月01日至2024年06月30日止
+                              </div>
+
+                              <div class="container-fluid overflow-hidden px-0">
+                                <div class="row gx-2">
+                                  <div class="col-12">
+                                    <a href="#" class="w-100 btn btn-black">Read More</a>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <!-- 02 -->
+                        <div class="col-sm-4 mb-4">
+                          <div class="card">
+                            <div class="position-relative">
+                              <div class="position-absolute flagBoxs">限量</div>
+                              <img src="images/pic02.png" class="card-img-top">
+                            </div>
+                            <div class="card-body">
+                              <p class="card-text mb-0">Le Ruban Pâtisserie 法朋烘焙甜點坊</p>
+                              <h5 class="card-title text-primary mb-3">尊榮獻禮-法朋老奶奶檸檬蛋糕</h5>
+
+                              <!-- <div class="mb-2">
+                                <span class="badge label-text me-2">標籤一</span>
+                                <span class="badge label-text">標籤二</span>
+                              </div> -->
+
+                              <p class="card-text cupon-text mb-2">贈送老奶奶檸檬蛋糕2片組乙份。（限尊榮會員本人每卡兌換乙次，不可重覆兌換）
+                              </p>
+
+                              <div class="f9 mb-3 text-black-50">
+                                <i class="bi bi-calendar2-event align-baseline me-2"></i>2023年07月01日至2024年06月30日止
+                              </div>
+
+                              <div class="container-fluid overflow-hidden px-0">
+                                <div class="row gx-2">
+                                  <div class="col-12">
+                                    <a href="#" class="w-100 btn btn-black">Read More</a>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <!-- 03 -->
+                        <div class="col-sm-4 mb-4">
+                          <div class="card">
+                            <div class="position-relative">
+                              <!-- <div class="position-absolute flagBoxs">限量</div> -->
+                              <img src="images/pic03.png" class="card-img-top">
+                            </div>
+                            <div class="card-body">
+                              <p class="card-text mb-0">Le Ruban Pâtisserie 法朋烘焙甜點坊</p>
+                              <h5 class="card-title text-primary mb-3">當月壽星生日禮</h5>
+
+                              <!-- <div class="mb-2">
+                                <span class="badge label-text me-2">標籤一</span>
+                                <span class="badge label-text">標籤二</span>
+                              </div> -->
+
+                              <p class="card-text cupon-text mb-2">當月壽星購買法朋7吋以上慶祝蛋糕即贈送保冷袋（價值＄299）
+                              </p>
+
+                              <div class="f9 mb-3 text-black-50">
+                                <i class="bi bi-calendar2-event align-baseline me-2"></i>2023年07月01日至2024年06月30日止
+                              </div>
+
+                              <div class="container-fluid overflow-hidden px-0">
+                                <div class="row gx-2">
+                                  <div class="col-12">
+                                    <a href="#" class="w-100 btn btn-black">Read More</a>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <!-- 04 -->
+                        <div class="col-sm-4 mb-4">
+                          <div class="card">
+                            <div class="position-relative">
+                              <!-- <div class="position-absolute flagBoxs">限量</div> -->
+                              <img src="images/pic04.png" class="card-img-top">
+                            </div>
+                            <div class="card-body">
+                              <p class="card-text mb-0">Le Ruban Pâtisserie 法朋烘焙甜點坊</p>
+                              <h5 class="card-title text-primary mb-3">當月壽星生日禮</h5>
+
+                              <!-- <div class="mb-2">
+                                <span class="badge label-text me-2">標籤一</span>
+                                <span class="badge label-text">標籤二</span>
+                              </div> -->
+
+                              <p class="card-text cupon-text mb-2">當月壽星購買法朋7吋以上慶祝蛋糕即贈送保冷袋（價值＄299）
+                              </p>
+
+                              <div class="f9 mb-3 text-black-50">
+                                <i class="bi bi-calendar2-event align-baseline me-2"></i>2023年07月01日至2024年06月30日止
+                              </div>
+
+                              <div class="container-fluid overflow-hidden px-0">
+                                <div class="row gx-2">
+                                  <div class="col-12">
+                                    <a href="#" class="w-100 btn btn-black">Read More</a>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        
+                        <!-- 
+                        <div class="col-12 text-center">
+                          <button class="btn moreBtn" type="submit">更多優惠</button>
+                        </div> -->
+                      </div>
+                    </div>
+                  </div>
+      
+                  <!-- 214 -->
+                  <div class="tab-pane fade" id="tag214" role="tabpanel" aria-labelledby="tag214-tab">
+                    <div class="container-fluid px-lg-0 px-3">
+                      <div class="row">
+                        <!-- 01 -->
+                        <div class="col-sm-4 mb-4">
+                          <div class="card">
+                            <div class="position-relative">
+                              <div class="position-absolute flagBoxs">限量</div>
+                              <img src="images/pic01.png" class="card-img-top">
+                            </div>
+                            <div class="card-body">
+                              <p class="card-text mb-0">Le Ruban Pâtisserie 法朋烘焙甜點坊</p>
+                              <h5 class="card-title text-primary mb-3">當月壽星生日禮</h5>
+
+                              <!-- <div class="mb-2">
+                                <span class="badge label-text me-2">標籤一</span>
+                                <span class="badge label-text">標籤二</span>
+                              </div> -->
+
+                              <p class="card-text cupon-text mb-2">當月壽星購買法朋7吋以上慶祝蛋糕即贈送保冷袋（價值＄299）
+                              </p>
+
+                              <div class="f9 mb-3 text-black-50">
+                                <i class="bi bi-calendar2-event align-baseline me-2"></i>2023年07月01日至2024年06月30日止
+                              </div>
+
+                              <div class="container-fluid overflow-hidden px-0">
+                                <div class="row gx-2">
+                                  <div class="col-12">
+                                    <a href="#" class="w-100 btn btn-black">Read More</a>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <!-- 02 -->
+                        <div class="col-sm-4 mb-4">
+                          <div class="card">
+                            <div class="position-relative">
+                              <div class="position-absolute flagBoxs">限量</div>
+                              <img src="images/pic02.png" class="card-img-top">
+                            </div>
+                            <div class="card-body">
+                              <p class="card-text mb-0">Le Ruban Pâtisserie 法朋烘焙甜點坊</p>
+                              <h5 class="card-title text-primary mb-3">尊榮獻禮-法朋老奶奶檸檬蛋糕</h5>
+
+                              <!-- <div class="mb-2">
+                                <span class="badge label-text me-2">標籤一</span>
+                                <span class="badge label-text">標籤二</span>
+                              </div> -->
+
+                              <p class="card-text cupon-text mb-2">贈送老奶奶檸檬蛋糕2片組乙份。（限尊榮會員本人每卡兌換乙次，不可重覆兌換）
+                              </p>
+
+                              <div class="f9 mb-3 text-black-50">
+                                <i class="bi bi-calendar2-event align-baseline me-2"></i>2023年07月01日至2024年06月30日止
+                              </div>
+
+                              <div class="container-fluid overflow-hidden px-0">
+                                <div class="row gx-2">
+                                  <div class="col-12">
+                                    <a href="#" class="w-100 btn btn-black">Read More</a>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <!-- 03 -->
+                        <div class="col-sm-4 mb-4">
+                          <div class="card">
+                            <div class="position-relative">
+                              <!-- <div class="position-absolute flagBoxs">限量</div> -->
+                              <img src="images/pic03.png" class="card-img-top">
+                            </div>
+                            <div class="card-body">
+                              <p class="card-text mb-0">Le Ruban Pâtisserie 法朋烘焙甜點坊</p>
+                              <h5 class="card-title text-primary mb-3">當月壽星生日禮</h5>
+
+                              <!-- <div class="mb-2">
+                                <span class="badge label-text me-2">標籤一</span>
+                                <span class="badge label-text">標籤二</span>
+                              </div> -->
+
+                              <p class="card-text cupon-text mb-2">當月壽星購買法朋7吋以上慶祝蛋糕即贈送保冷袋（價值＄299）
+                              </p>
+
+                              <div class="f9 mb-3 text-black-50">
+                                <i class="bi bi-calendar2-event align-baseline me-2"></i>2023年07月01日至2024年06月30日止
+                              </div>
+
+                              <div class="container-fluid overflow-hidden px-0">
+                                <div class="row gx-2">
+                                  <div class="col-12">
+                                    <a href="#" class="w-100 btn btn-black">Read More</a>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <!-- 04 -->
+                        <div class="col-sm-4 mb-4">
+                          <div class="card">
+                            <div class="position-relative">
+                              <!-- <div class="position-absolute flagBoxs">限量</div> -->
+                              <img src="images/pic04.png" class="card-img-top">
+                            </div>
+                            <div class="card-body">
+                              <p class="card-text mb-0">Le Ruban Pâtisserie 法朋烘焙甜點坊</p>
+                              <h5 class="card-title text-primary mb-3">當月壽星生日禮</h5>
+
+                              <!-- <div class="mb-2">
+                                <span class="badge label-text me-2">標籤一</span>
+                                <span class="badge label-text">標籤二</span>
+                              </div> -->
+
+                              <p class="card-text cupon-text mb-2">當月壽星購買法朋7吋以上慶祝蛋糕即贈送保冷袋（價值＄299）
+                              </p>
+
+                              <div class="f9 mb-3 text-black-50">
+                                <i class="bi bi-calendar2-event align-baseline me-2"></i>2023年07月01日至2024年06月30日止
+                              </div>
+
+                              <div class="container-fluid overflow-hidden px-0">
+                                <div class="row gx-2">
+                                  <div class="col-12">
+                                    <a href="#" class="w-100 btn btn-black">Read More</a>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <!-- 05 -->
+                        <div class="col-sm-4 mb-4">
+                          <div class="card">
+                            <div class="position-relative">
+                              <!-- <div class="position-absolute flagBoxs">限量</div> -->
+                              <img src="images/pic05.png" class="card-img-top">
+                            </div>
+                            <div class="card-body">
+                              <p class="card-text mb-0">Le Ruban Pâtisserie 法朋烘焙甜點坊</p>
+                              <h5 class="card-title text-primary mb-3">當月壽星生日禮</h5>
+
+                              <!-- <div class="mb-2">
+                                <span class="badge label-text me-2">標籤一</span>
+                                <span class="badge label-text">標籤二</span>
+                              </div> -->
+
+                              <p class="card-text cupon-text mb-2">當月壽星購買法朋7吋以上慶祝蛋糕即贈送保冷袋（價值＄299）
+                              </p>
+
+                              <div class="f9 mb-3 text-black-50">
+                                <i class="bi bi-calendar2-event align-baseline me-2"></i>2023年07月01日至2024年06月30日止
+                              </div>
+
+                              <div class="container-fluid overflow-hidden px-0">
+                                <div class="row gx-2">
+                                  <div class="col-12">
+                                    <a href="#" class="w-100 btn btn-black">Read More</a>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+      
+                        <!-- <div class="col-12 text-center">
+                          <button class="btn moreBtn" type="submit">更多優惠</button>
+                        </div> -->
+                      </div>
+                    </div>
+                  </div>
+      
+                  <!-- 215 -->
+                  <div class="tab-pane fade" id="tag215" role="tabpanel" aria-labelledby="tag215-tab">
+                    <div class="container-fluid px-lg-0 px-3">
+                      <div class="row">
+                        <!-- 01 -->
+                        <div class="col-sm-4 mb-4">
+                          <div class="card">
+                            <div class="position-relative">
+                              <div class="position-absolute flagBoxs">限量</div>
+                              <img src="images/pic01.png" class="card-img-top">
+                            </div>
+                            <div class="card-body">
+                              <p class="card-text mb-0">Le Ruban Pâtisserie 法朋烘焙甜點坊</p>
+                              <h5 class="card-title text-primary mb-3">當月壽星生日禮</h5>
+
+                              <!-- <div class="mb-2">
+                                <span class="badge label-text me-2">標籤一</span>
+                                <span class="badge label-text">標籤二</span>
+                              </div> -->
+
+                              <p class="card-text cupon-text mb-2">當月壽星購買法朋7吋以上慶祝蛋糕即贈送保冷袋（價值＄299）
+                              </p>
+
+                              <div class="f9 mb-3 text-black-50">
+                                <i class="bi bi-calendar2-event align-baseline me-2"></i>2023年07月01日至2024年06月30日止
+                              </div>
+
+                              <div class="container-fluid overflow-hidden px-0">
+                                <div class="row gx-2">
+                                  <div class="col-12">
+                                    <a href="#" class="w-100 btn btn-black">Read More</a>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <!-- 02 -->
+                        <div class="col-sm-4 mb-4">
+                          <div class="card">
+                            <div class="position-relative">
+                              <div class="position-absolute flagBoxs">限量</div>
+                              <img src="images/pic02.png" class="card-img-top">
+                            </div>
+                            <div class="card-body">
+                              <p class="card-text mb-0">Le Ruban Pâtisserie 法朋烘焙甜點坊</p>
+                              <h5 class="card-title text-primary mb-3">尊榮獻禮-法朋老奶奶檸檬蛋糕</h5>
+
+                              <!-- <div class="mb-2">
+                                <span class="badge label-text me-2">標籤一</span>
+                                <span class="badge label-text">標籤二</span>
+                              </div> -->
+
+                              <p class="card-text cupon-text mb-2">贈送老奶奶檸檬蛋糕2片組乙份。（限尊榮會員本人每卡兌換乙次，不可重覆兌換）
+                              </p>
+
+                              <div class="f9 mb-3 text-black-50">
+                                <i class="bi bi-calendar2-event align-baseline me-2"></i>2023年07月01日至2024年06月30日止
+                              </div>
+
+                              <div class="container-fluid overflow-hidden px-0">
+                                <div class="row gx-2">
+                                  <div class="col-12">
+                                    <a href="#" class="w-100 btn btn-black">Read More</a>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <!-- 03 -->
+                        <div class="col-sm-4 mb-4">
+                          <div class="card">
+                            <div class="position-relative">
+                              <!-- <div class="position-absolute flagBoxs">限量</div> -->
+                              <img src="images/pic03.png" class="card-img-top">
+                            </div>
+                            <div class="card-body">
+                              <p class="card-text mb-0">Le Ruban Pâtisserie 法朋烘焙甜點坊</p>
+                              <h5 class="card-title text-primary mb-3">當月壽星生日禮</h5>
+
+                              <!-- <div class="mb-2">
+                                <span class="badge label-text me-2">標籤一</span>
+                                <span class="badge label-text">標籤二</span>
+                              </div> -->
+
+                              <p class="card-text cupon-text mb-2">當月壽星購買法朋7吋以上慶祝蛋糕即贈送保冷袋（價值＄299）
+                              </p>
+
+                              <div class="f9 mb-3 text-black-50">
+                                <i class="bi bi-calendar2-event align-baseline me-2"></i>2023年07月01日至2024年06月30日止
+                              </div>
+
+                              <div class="container-fluid overflow-hidden px-0">
+                                <div class="row gx-2">
+                                  <div class="col-12">
+                                    <a href="#" class="w-100 btn btn-black">Read More</a>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <!-- 04 -->
+                        <div class="col-sm-4 mb-4">
+                          <div class="card">
+                            <div class="position-relative">
+                              <!-- <div class="position-absolute flagBoxs">限量</div> -->
+                              <img src="images/pic04.png" class="card-img-top">
+                            </div>
+                            <div class="card-body">
+                              <p class="card-text mb-0">Le Ruban Pâtisserie 法朋烘焙甜點坊</p>
+                              <h5 class="card-title text-primary mb-3">當月壽星生日禮</h5>
+
+                              <!-- <div class="mb-2">
+                                <span class="badge label-text me-2">標籤一</span>
+                                <span class="badge label-text">標籤二</span>
+                              </div> -->
+
+                              <p class="card-text cupon-text mb-2">當月壽星購買法朋7吋以上慶祝蛋糕即贈送保冷袋（價值＄299）
+                              </p>
+
+                              <div class="f9 mb-3 text-black-50">
+                                <i class="bi bi-calendar2-event align-baseline me-2"></i>2023年07月01日至2024年06月30日止
+                              </div>
+
+                              <div class="container-fluid overflow-hidden px-0">
+                                <div class="row gx-2">
+                                  <div class="col-12">
+                                    <a href="#" class="w-100 btn btn-black">Read More</a>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <!-- 05 -->
+                        <div class="col-sm-4 mb-4">
+                          <div class="card">
+                            <div class="position-relative">
+                              <!-- <div class="position-absolute flagBoxs">限量</div> -->
+                              <img src="images/pic05.png" class="card-img-top">
+                            </div>
+                            <div class="card-body">
+                              <p class="card-text mb-0">Le Ruban Pâtisserie 法朋烘焙甜點坊</p>
+                              <h5 class="card-title text-primary mb-3">當月壽星生日禮</h5>
+
+                              <!-- <div class="mb-2">
+                                <span class="badge label-text me-2">標籤一</span>
+                                <span class="badge label-text">標籤二</span>
+                              </div> -->
+
+                              <p class="card-text cupon-text mb-2">當月壽星購買法朋7吋以上慶祝蛋糕即贈送保冷袋（價值＄299）
+                              </p>
+
+                              <div class="f9 mb-3 text-black-50">
+                                <i class="bi bi-calendar2-event align-baseline me-2"></i>2023年07月01日至2024年06月30日止
+                              </div>
+
+                              <div class="container-fluid overflow-hidden px-0">
+                                <div class="row gx-2">
+                                  <div class="col-12">
+                                    <a href="#" class="w-100 btn btn-black">Read More</a>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+      
+                        <!-- <div class="col-12 text-center">
+                          <button class="btn moreBtn" type="submit">更多優惠</button>
+                        </div> -->
+                      </div>
+                    </div>
+                  </div>
+      
+                  <!-- 216 -->
+                  <div class="tab-pane fade" id="tag216" role="tabpanel" aria-labelledby="tag216-tab">
+                    <div class="container-fluid px-lg-0 px-3">
+                      <div class="row">
+                        <!-- 01 -->
+                        <div class="col-sm-4 mb-4">
+                          <div class="card">
+                            <div class="position-relative">
+                              <div class="position-absolute flagBoxs">限量</div>
+                              <img src="images/pic01.png" class="card-img-top">
+                            </div>
+                            <div class="card-body">
+                              <p class="card-text mb-0">Le Ruban Pâtisserie 法朋烘焙甜點坊</p>
+                              <h5 class="card-title text-primary mb-3">當月壽星生日禮</h5>
+
+                              <!-- <div class="mb-2">
+                                <span class="badge label-text me-2">標籤一</span>
+                                <span class="badge label-text">標籤二</span>
+                              </div> -->
+
+                              <p class="card-text cupon-text mb-2">當月壽星購買法朋7吋以上慶祝蛋糕即贈送保冷袋（價值＄299）
+                              </p>
+
+                              <div class="f9 mb-3 text-black-50">
+                                <i class="bi bi-calendar2-event align-baseline me-2"></i>2023年07月01日至2024年06月30日止
+                              </div>
+
+                              <div class="container-fluid overflow-hidden px-0">
+                                <div class="row gx-2">
+                                  <div class="col-12">
+                                    <a href="#" class="w-100 btn btn-black">Read More</a>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <!-- 02 -->
+                        <div class="col-sm-4 mb-4">
+                          <div class="card">
+                            <div class="position-relative">
+                              <div class="position-absolute flagBoxs">限量</div>
+                              <img src="images/pic02.png" class="card-img-top">
+                            </div>
+                            <div class="card-body">
+                              <p class="card-text mb-0">Le Ruban Pâtisserie 法朋烘焙甜點坊</p>
+                              <h5 class="card-title text-primary mb-3">尊榮獻禮-法朋老奶奶檸檬蛋糕</h5>
+
+                              <!-- <div class="mb-2">
+                                <span class="badge label-text me-2">標籤一</span>
+                                <span class="badge label-text">標籤二</span>
+                              </div> -->
+
+                              <p class="card-text cupon-text mb-2">贈送老奶奶檸檬蛋糕2片組乙份。（限尊榮會員本人每卡兌換乙次，不可重覆兌換）
+                              </p>
+
+                              <div class="f9 mb-3 text-black-50">
+                                <i class="bi bi-calendar2-event align-baseline me-2"></i>2023年07月01日至2024年06月30日止
+                              </div>
+
+                              <div class="container-fluid overflow-hidden px-0">
+                                <div class="row gx-2">
+                                  <div class="col-12">
+                                    <a href="#" class="w-100 btn btn-black">Read More</a>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <!-- 03 -->
+                        <div class="col-sm-4 mb-4">
+                          <div class="card">
+                            <div class="position-relative">
+                              <!-- <div class="position-absolute flagBoxs">限量</div> -->
+                              <img src="images/pic03.png" class="card-img-top">
+                            </div>
+                            <div class="card-body">
+                              <p class="card-text mb-0">Le Ruban Pâtisserie 法朋烘焙甜點坊</p>
+                              <h5 class="card-title text-primary mb-3">當月壽星生日禮</h5>
+
+                              <!-- <div class="mb-2">
+                                <span class="badge label-text me-2">標籤一</span>
+                                <span class="badge label-text">標籤二</span>
+                              </div> -->
+
+                              <p class="card-text cupon-text mb-2">當月壽星購買法朋7吋以上慶祝蛋糕即贈送保冷袋（價值＄299）
+                              </p>
+
+                              <div class="f9 mb-3 text-black-50">
+                                <i class="bi bi-calendar2-event align-baseline me-2"></i>2023年07月01日至2024年06月30日止
+                              </div>
+
+                              <div class="container-fluid overflow-hidden px-0">
+                                <div class="row gx-2">
+                                  <div class="col-12">
+                                    <a href="#" class="w-100 btn btn-black">Read More</a>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <!-- 04 -->
+                        <div class="col-sm-4 mb-4">
+                          <div class="card">
+                            <div class="position-relative">
+                              <!-- <div class="position-absolute flagBoxs">限量</div> -->
+                              <img src="images/pic04.png" class="card-img-top">
+                            </div>
+                            <div class="card-body">
+                              <p class="card-text mb-0">Le Ruban Pâtisserie 法朋烘焙甜點坊</p>
+                              <h5 class="card-title text-primary mb-3">當月壽星生日禮</h5>
+
+                              <!-- <div class="mb-2">
+                                <span class="badge label-text me-2">標籤一</span>
+                                <span class="badge label-text">標籤二</span>
+                              </div> -->
+
+                              <p class="card-text cupon-text mb-2">當月壽星購買法朋7吋以上慶祝蛋糕即贈送保冷袋（價值＄299）
+                              </p>
+
+                              <div class="f9 mb-3 text-black-50">
+                                <i class="bi bi-calendar2-event align-baseline me-2"></i>2023年07月01日至2024年06月30日止
+                              </div>
+
+                              <div class="container-fluid overflow-hidden px-0">
+                                <div class="row gx-2">
+                                  <div class="col-12">
+                                    <a href="#" class="w-100 btn btn-black">Read More</a>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <!-- 05 -->
+                        <div class="col-sm-4 mb-4">
+                          <div class="card">
+                            <div class="position-relative">
+                              <!-- <div class="position-absolute flagBoxs">限量</div> -->
+                              <img src="images/pic05.png" class="card-img-top">
+                            </div>
+                            <div class="card-body">
+                              <p class="card-text mb-0">Le Ruban Pâtisserie 法朋烘焙甜點坊</p>
+                              <h5 class="card-title text-primary mb-3">當月壽星生日禮</h5>
+
+                              <!-- <div class="mb-2">
+                                <span class="badge label-text me-2">標籤一</span>
+                                <span class="badge label-text">標籤二</span>
+                              </div> -->
+
+                              <p class="card-text cupon-text mb-2">當月壽星購買法朋7吋以上慶祝蛋糕即贈送保冷袋（價值＄299）
+                              </p>
+
+                              <div class="f9 mb-3 text-black-50">
+                                <i class="bi bi-calendar2-event align-baseline me-2"></i>2023年07月01日至2024年06月30日止
+                              </div>
+
+                              <div class="container-fluid overflow-hidden px-0">
+                                <div class="row gx-2">
+                                  <div class="col-12">
+                                    <a href="#" class="w-100 btn btn-black">Read More</a>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                       
+                        <!-- <div class="col-12 text-center">
+                          <button class="btn moreBtn" type="submit">更多優惠</button>
+                        </div> -->
+                      </div>
+                    </div>
+                  </div>
+      
+                  <!-- 217 -->
+                  <div class="tab-pane fade" id="tag217" role="tabpanel" aria-labelledby="tag217-tab">
+                    <div class="container-fluid px-lg-0 px-3">
+                      <div class="row">
+                        
+      
+                        <!-- <div class="col-12 text-center">
+                          <button class="btn moreBtn" type="submit">更多優惠</button>
+                        </div> -->
+                      </div>
+                    </div>
+                  </div>
+      
+                  <!-- 218 -->
+                  <div class="tab-pane fade" id="tag218" role="tabpanel" aria-labelledby="tag218-tab">
+                    <div class="container-fluid px-lg-0 px-3">
+                      <div class="row">
+                        
+      
+                        <!-- <div class="col-12 text-center">
+                          <button class="btn moreBtn" type="submit">更多優惠</button>
+                        </div> -->
+                      </div>
+                    </div>
+                  </div>
+      
+                  <!-- 219 -->
+                  <div class="tab-pane fade" id="tag219" role="tabpanel" aria-labelledby="tag219-tab">
+                    <div class="container-fluid px-lg-0 px-3">
+                      <div class="row">
+                        
+      
+                        <!-- <div class="col-12 text-center">
+                          <button class="btn moreBtn" type="submit">更多優惠</button>
+                        </div> -->
+                      </div>
+                    </div>
+                  </div>
+      
+                </div>
+              </div>
+            </div>
+      
+      
+      
+            <!-- 220 list類別：可使用 -->
+            <div class="tab-pane fade" id="tag220" role="tabpanel" aria-labelledby="tag220-tab">
+              <div class="navboxs">
+                  <div class="w990 px-2 fs-4 swiper swiper-tag">
+                    <!-- 220 list類別：可使用 -->
+                    <div class="swiper-wrapper swiper-wrapper-tag nav nav-pills" id="pills-tab" role="tablist" style="flex-wrap: nowrap;">
+                      <!-- 221 -->
+                      <button class="swiper-slide swiper-slide-tag nav-link tag-link active" id="tag221-tab" data-bs-toggle="pill" data-bs-target="#tag221" role="tab" aria-controls="tag221" aria-selected="true">全部</button>
+                      <!-- 222 -->
+                      <button class="swiper-slide swiper-slide-tag nav-link tag-link" id="tag222-tab" data-bs-toggle="pill" data-bs-target="#tag222" role="tab" aria-controls="tag222" aria-selected="false">限量優惠</button>
+                      <!-- 223 -->
+                      <button class="swiper-slide swiper-slide-tag nav-link tag-link" id="tag223-tab" data-bs-toggle="pill" data-bs-target="#tag223" role="tab" aria-controls="tag223" aria-selected="false">渡假休閒</button>
+                      <!-- 224 -->
+                      <button class="swiper-slide swiper-slide-tag nav-link tag-link" id="tag224-tab" data-bs-toggle="pill" data-bs-target="#tag224" role="tab" aria-controls="tag224" aria-selected="false">美饌饗宴</button>
+                      <!-- 225 -->
+                      <button class="swiper-slide swiper-slide-tag nav-link tag-link" id="tag225-tab" data-bs-toggle="pill" data-bs-target="#tag225" role="tab" aria-controls="tag225" aria-selected="false">極致生活</button>
+                      <!-- 226 -->
+                      <button class="swiper-slide swiper-slide-tag nav-link tag-link" id="tag226-tab" data-bs-toggle="pill" data-bs-target="#tag226" role="tab" aria-controls="tag226" aria-selected="false">Lexus 原廠專屬優惠</button>
+                      <!-- 227 -->
+                      <button class="swiper-slide swiper-slide-tag nav-link tag-link" id="tag227-tab" data-bs-toggle="pill" data-bs-target="#tag227" role="tab" aria-controls="tag227" aria-selected="false"></button>
+                      <!-- 228 -->
+                      <button class="swiper-slide swiper-slide-tag nav-link tag-link" id="tag228-tab" data-bs-toggle="pill" data-bs-target="#tag228" role="tab" aria-controls="tag228" aria-selected="false"></button>
+                      <!-- 229 -->
+                      <button class="swiper-slide swiper-slide-tag nav-link tag-link" id="tag229-tab" data-bs-toggle="pill" data-bs-target="#tag229" role="tab" aria-controls="tag229" aria-selected="false"></button>
+                    </div>
+                    <div class="swiper-button-prev swiper-button-prev-tag"></div>
+                    <div class="swiper-button-next swiper-button-next-tag"></div>
+                  </div>
+              </div>
+      
+              <div class="mainboxs w990 mt-4">
+                <div class="tab-content" id="pills-tabContent">
+                  <!-- 221 -->
+                  <div class="tab-pane fade show active" id="tag221" role="tabpanel" aria-labelledby="tag221-tab">
+                    <div class="container-fluid px-lg-0 px-3">
+                      <div class="row">
+                        <!-- 01 -->
+                        <div class="col-sm-4 mb-4">
+                          <div class="card">
+                            <div class="row p-3 p-xl-0">
+                              <div class="col-12 card-text border-bottom mobile-open mb-3 pb-3">Le Ruban Pâtisserie 法朋烘焙甜點坊</div>
+                              <div class="col-xl-12 col-4">
+                                <div class="position-relative">
+                                  <!-- <div class="position-absolute flagBoxs">限量</div> -->
+                                  <picture>
+                                    <source srcset="images/pic01-s.png" media="(max-width: 1200px)">
+                                    <img src="images/pic01.png" class="card-img-top" alt="">
+                                  </picture>
+                                </div>
+                              </div>
+                              <div class="col-xl-12 col-8">
+                                <div class="card-body p-0 p-xl-3">
+                                  <p class="card-text mb-0 mobile-close">Le Ruban Pâtisserie 法朋烘焙甜點坊</p>
+                                  <h5 class="card-title text-primary mb-xl-3 mb-2">當月壽星生日禮</h5>
+
+                                  <!-- <div class="mb-2">
+                                    <span class="badge label-text me-2">標籤一</span>
+                                    <span class="badge label-text">標籤二</span>
+                                  </div> -->
+
+                                  <p class="card-text cupon-text mb-2 mobile-close">當月壽星購買法朋7吋以上慶祝蛋糕即贈送保冷袋（價值＄299）
+                                  </p>
+
+                                  <div class="f9 text-black-50 lh-base mb-xl-3 mb-1">
+                                    <i class="bi bi-calendar2-event align-baseline me-2"></i>2023年07月01日至06月30日止
+                                  </div>
+
+                                  <div class="container-fluid overflow-hidden px-0">
+                                    <div class="row gx-2">
+                                      <div class="col-12 alert alert-secondary py-1 d-flex justify-content-between align-items-center mb-0" role="alert">
+                                        <div>
+                                          <strong>專屬優惠序號：</strong>
+                                          <span id="promo-code">Q513311199800231</span>
+                                        </div>
+                                        <!-- 複製 SVG icon -->
+                                        <svg id="copy-icon" class="copy-icon" xmlns="http://www.w3.org/2000/svg"
+                                             viewBox="0 0 16 16" title="複製優惠碼">
+                                          <path fill-rule="evenodd" d="M4 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2zm2-1a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1zM2 5a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1v-1h1v1a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h1v1z"/>
+                                        </svg>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <!-- 02 -->
+                        <div class="col-sm-4 mb-4">
+                          <div class="card">
+                            <div class="row p-3 p-xl-0">
+                              <div class="col-12 card-text border-bottom mobile-open mb-3 pb-3">Le Ruban Pâtisserie 法朋烘焙甜點坊</div>
+                              <div class="col-xl-12 col-4">
+                                <div class="position-relative">
+                                  <!-- <div class="position-absolute flagBoxs">限量</div> -->
+                                  <picture>
+                                    <source srcset="images/pic02-s.png" media="(max-width: 1200px)">
+                                    <img src="images/pic02.png" class="card-img-top" alt="">
+                                  </picture>
+                                </div>
+                              </div>
+                              <div class="col-xl-12 col-8">
+                                <div class="card-body p-0 p-xl-3">
+                                  <p class="card-text mb-0 mobile-close">Le Ruban Pâtisserie 法朋烘焙甜點坊</p>
+                                  <h5 class="card-title text-primary mb-xl-3 mb-2">當月壽星生日禮</h5>
+
+                                  <!-- <div class="mb-2">
+                                    <span class="badge label-text me-2">標籤一</span>
+                                    <span class="badge label-text">標籤二</span>
+                                  </div> -->
+
+                                  <p class="card-text cupon-text mb-2 mobile-close">當月壽星購買法朋7吋以上慶祝蛋糕即贈送保冷袋（價值＄299）
+                                  </p>
+
+                                  <div class="f9 text-black-50 lh-base mb-xl-3 mb-1">
+                                    <i class="bi bi-calendar2-event align-baseline me-2"></i>2023年07月01日至06月30日止
+                                  </div>
+
+                                  <div class="container-fluid overflow-hidden px-0">
+                                    <div class="row gx-2">
+                                      <div class="col-12">
+                                        <a href="#" class="w-100 btn btn-black">立即使用</a>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <!-- 03 -->
+                        <div class="col-sm-4 mb-4">
+                          <div class="card">
+                            <div class="row p-3 p-xl-0">
+                              <div class="col-12 card-text border-bottom mobile-open mb-3 pb-3">Le Ruban Pâtisserie 法朋烘焙甜點坊</div>
+                              <div class="col-xl-12 col-4">
+                                <div class="position-relative">
+                                  <!-- <div class="position-absolute flagBoxs">限量</div> -->
+                                  <picture>
+                                    <source srcset="images/pic03-s.png" media="(max-width: 1200px)">
+                                    <img src="images/pic03.png" class="card-img-top" alt="">
+                                  </picture>
+                                </div>
+                              </div>
+                              <div class="col-xl-12 col-8">
+                                <div class="card-body p-0 p-xl-3">
+                                  <p class="card-text mb-0 mobile-close">Le Ruban Pâtisserie 法朋烘焙甜點坊</p>
+                                  <h5 class="card-title text-primary mb-xl-3 mb-2">當月壽星生日禮</h5>
+
+                                  <!-- <div class="mb-2">
+                                    <span class="badge label-text me-2">標籤一</span>
+                                    <span class="badge label-text">標籤二</span>
+                                  </div> -->
+
+                                  <p class="card-text cupon-text mb-2 mobile-close">當月壽星購買法朋7吋以上慶祝蛋糕即贈送保冷袋（價值＄299）
+                                  </p>
+
+                                  <div class="f9 text-black-50 lh-base mb-xl-3 mb-1">
+                                    <i class="bi bi-calendar2-event align-baseline me-2"></i>2023年07月01日至06月30日止
+                                  </div>
+
+                                  <div class="container-fluid overflow-hidden px-0">
+                                    <div class="row gx-2">
+                                      <div class="col-12">
+                                        <a href="#" class="w-100 btn btn-black">立即使用</a>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <!-- 04 -->
+                        <div class="col-sm-4 mb-4">
+                          <div class="card">
+                            <div class="row p-3 p-xl-0">
+                              <div class="col-12 card-text border-bottom mobile-open mb-3 pb-3">Le Ruban Pâtisserie 法朋烘焙甜點坊</div>
+                              <div class="col-xl-12 col-4">
+                                <div class="position-relative">
+                                  <!-- <div class="position-absolute flagBoxs">限量</div> -->
+                                  <picture>
+                                    <source srcset="images/pic04-s.png" media="(max-width: 1200px)">
+                                    <img src="images/pic04.png" class="card-img-top" alt="">
+                                  </picture>
+                                </div>
+                              </div>
+                              <div class="col-xl-12 col-8">
+                                <div class="card-body p-0 p-xl-3">
+                                  <p class="card-text mb-0 mobile-close">Le Ruban Pâtisserie 法朋烘焙甜點坊</p>
+                                  <h5 class="card-title text-primary mb-xl-3 mb-2">當月壽星生日禮</h5>
+
+                                  <!-- <div class="mb-2">
+                                    <span class="badge label-text me-2">標籤一</span>
+                                    <span class="badge label-text">標籤二</span>
+                                  </div> -->
+
+                                  <p class="card-text cupon-text mb-2 mobile-close">當月壽星購買法朋7吋以上慶祝蛋糕即贈送保冷袋（價值＄299）
+                                  </p>
+
+                                  <div class="f9 text-black-50 lh-base mb-xl-3 mb-1">
+                                    <i class="bi bi-calendar2-event align-baseline me-2"></i>2023年07月01日至06月30日止
+                                  </div>
+
+                                  <div class="container-fluid overflow-hidden px-0">
+                                    <div class="row gx-2">
+                                      <div class="col-12">
+                                        <a href="#" class="w-100 btn btn-black">立即使用</a>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <!-- 05 -->
+                        <div class="col-sm-4 mb-4">
+                          <div class="card">
+                            <div class="row p-3 p-xl-0">
+                              <div class="col-12 card-text border-bottom mobile-open mb-3 pb-3">Le Ruban Pâtisserie 法朋烘焙甜點坊</div>
+                              <div class="col-xl-12 col-4">
+                                <div class="position-relative">
+                                  <!-- <div class="position-absolute flagBoxs">限量</div> -->
+                                  <picture>
+                                    <source srcset="images/pic05-s.png" media="(max-width: 1200px)">
+                                    <img src="images/pic05.png" class="card-img-top" alt="">
+                                  </picture>
+                                </div>
+                              </div>
+                              <div class="col-xl-12 col-8">
+                                <div class="card-body p-0 p-xl-3">
+                                  <p class="card-text mb-0 mobile-close">Le Ruban Pâtisserie 法朋烘焙甜點坊</p>
+                                  <h5 class="card-title text-primary mb-xl-3 mb-2">當月壽星生日禮</h5>
+
+                                  <!-- <div class="mb-2">
+                                    <span class="badge label-text me-2">標籤一</span>
+                                    <span class="badge label-text">標籤二</span>
+                                  </div> -->
+
+                                  <p class="card-text cupon-text mb-2 mobile-close">當月壽星購買法朋7吋以上慶祝蛋糕即贈送保冷袋（價值＄299）
+                                  </p>
+
+                                  <div class="f9 text-black-50 lh-base mb-xl-3 mb-1">
+                                    <i class="bi bi-calendar2-event align-baseline me-2"></i>2023年07月01日至06月30日止
+                                  </div>
+
+                                  <div class="container-fluid overflow-hidden px-0">
+                                    <div class="row gx-2">
+                                      <div class="col-12">
+                                        <a href="#" class="w-100 btn btn-black">立即使用</a>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <!-- 06 -->
+                        <div class="col-sm-4 mb-4">
+                          <div class="card">
+                            <div class="row p-3 p-xl-0">
+                              <div class="col-12 card-text border-bottom mobile-open mb-3 pb-3">Le Ruban Pâtisserie 法朋烘焙甜點坊</div>
+                              <div class="col-xl-12 col-4">
+                                <div class="position-relative">
+                                  <!-- <div class="position-absolute flagBoxs">限量</div> -->
+                                  <picture>
+                                    <source srcset="images/pic06-s.png" media="(max-width: 1200px)">
+                                    <img src="images/pic06.png" class="card-img-top" alt="">
+                                  </picture>
+                                </div>
+                              </div>
+                              <div class="col-xl-12 col-8">
+                                <div class="card-body p-0 p-xl-3">
+                                  <p class="card-text mb-0 mobile-close">Le Ruban Pâtisserie 法朋烘焙甜點坊</p>
+                                  <h5 class="card-title text-primary mb-xl-3 mb-2">當月壽星生日禮</h5>
+
+                                  <!-- <div class="mb-2">
+                                    <span class="badge label-text me-2">標籤一</span>
+                                    <span class="badge label-text">標籤二</span>
+                                  </div> -->
+
+                                  <p class="card-text cupon-text mb-2 mobile-close">當月壽星購買法朋7吋以上慶祝蛋糕即贈送保冷袋（價值＄299）
+                                  </p>
+
+                                  <div class="f9 text-black-50 lh-base mb-xl-3 mb-1">
+                                    <i class="bi bi-calendar2-event align-baseline me-2"></i>2023年07月01日至06月30日止
+                                  </div>
+
+                                  <div class="container-fluid overflow-hidden px-0">
+                                    <div class="row gx-2">
+                                      <div class="col-12">
+                                        <a href="#" class="w-100 btn btn-black">立即使用</a>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <!-- 07 -->
+                        <div class="col-sm-4 mb-4">
+                          <div class="card">
+                            <div class="row p-3 p-xl-0">
+                              <div class="col-12 card-text border-bottom mobile-open mb-3 pb-3">Le Ruban Pâtisserie 法朋烘焙甜點坊</div>
+                              <div class="col-xl-12 col-4">
+                                <div class="position-relative">
+                                  <!-- <div class="position-absolute flagBoxs">限量</div> -->
+                                  <picture>
+                                    <source srcset="images/pic07-s.png" media="(max-width: 1200px)">
+                                    <img src="images/pic07.png" class="card-img-top" alt="">
+                                  </picture>
+                                </div>
+                              </div>
+                              <div class="col-xl-12 col-8">
+                                <div class="card-body p-0 p-xl-3">
+                                  <p class="card-text mb-0 mobile-close">Le Ruban Pâtisserie 法朋烘焙甜點坊</p>
+                                  <h5 class="card-title text-primary mb-xl-3 mb-2">當月壽星生日禮</h5>
+
+                                  <!-- <div class="mb-2">
+                                    <span class="badge label-text me-2">標籤一</span>
+                                    <span class="badge label-text">標籤二</span>
+                                  </div> -->
+
+                                  <p class="card-text cupon-text mb-2 mobile-close">當月壽星購買法朋7吋以上慶祝蛋糕即贈送保冷袋（價值＄299）
+                                  </p>
+
+                                  <div class="f9 text-black-50 lh-base mb-xl-3 mb-1">
+                                    <i class="bi bi-calendar2-event align-baseline me-2"></i>2023年07月01日至06月30日止
+                                  </div>
+
+                                  <div class="container-fluid overflow-hidden px-0">
+                                    <div class="row gx-2">
+                                      <div class="col-12">
+                                        <a href="#" class="w-100 btn btn-black">立即使用</a>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+
+                        <!-- <div class="col-12 text-center">
+                          <button class="btn moreBtn" type="submit">更多優惠</button>
+                        </div> -->
+
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- 222 -->
+                  <div class="tab-pane fade" id="tag222" role="tabpanel" aria-labelledby="tag222-tab">
+                    <div class="container-fluid px-lg-0 px-3">
+                      <div class="row">
+                        同上
+
+                        <!-- <div class="col-12 text-center">
+                          <button class="btn moreBtn" type="submit">更多優惠</button>
+                        </div> -->
+
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- 223 -->
+                  <div class="tab-pane fade" id="tag223" role="tabpanel" aria-labelledby="tag223-tab">
+                    <div class="container-fluid px-lg-0 px-3">
+                      <div class="row">
+                        同上
+
+                        <!-- <div class="col-12 text-center">
+                          <button class="btn moreBtn" type="submit">更多優惠</button>
+                        </div> -->
+
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- 224 -->
+                  <div class="tab-pane fade" id="tag224" role="tabpanel" aria-labelledby="tag224-tab">
+                    <div class="container-fluid px-lg-0 px-3">
+                      <div class="row">
+                        同上
+
+                        <!-- <div class="col-12 text-center">
+                          <button class="btn moreBtn" type="submit">更多優惠</button>
+                        </div> -->
+
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- 225 -->
+                  <div class="tab-pane fade" id="tag225" role="tabpanel" aria-labelledby="tag225-tab">
+                    <div class="container-fluid px-lg-0 px-3">
+                      <div class="row">
+                        同上
+
+                        <!-- <div class="col-12 text-center">
+                          <button class="btn moreBtn" type="submit">更多優惠</button>
+                        </div> -->
+
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- 226 -->
+                  <div class="tab-pane fade" id="tag226" role="tabpanel" aria-labelledby="tag226-tab">
+                    <div class="container-fluid px-lg-0 px-3">
+                      <div class="row">
+                        同上
+
+                        <!-- <div class="col-12 text-center">
+                          <button class="btn moreBtn" type="submit">更多優惠</button>
+                        </div> -->
+
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- 227 -->
+                  <div class="tab-pane fade" id="tag227" role="tabpanel" aria-labelledby="tag227-tab">
+                    
+                  </div>
+
+                  <!-- 228 -->
+                  <div class="tab-pane fade" id="tag228" role="tabpanel" aria-labelledby="tag228-tab">
+                    
+                  </div>
+
+                  <!-- 229 -->
+                  <div class="tab-pane fade" id="tag229" role="tabpanel" aria-labelledby="tag229-tab">
+                    
+                  </div>
+      
+                </div>
+              </div>
+            </div>
+      
+      
+      
+            <!-- 230 list類別：已兌換 -->
+            <div class="tab-pane fade" id="tag230" role="tabpanel" aria-labelledby="tag230-tab">
+              <div class="navboxs">
+                  <div class="w990 px-2 fs-4 swiper swiper-tag">
+                    <!-- 230 list類別：已兌換 -->
+                    <div class="swiper-wrapper swiper-wrapper-tag nav nav-pills" id="pills-tab" role="tablist" style="flex-wrap: nowrap;">
+                      <!-- 231 -->
+                      <button class="swiper-slide swiper-slide-tag nav-link tag-link active" id="tag231-tab" data-bs-toggle="pill" data-bs-target="#tag231" role="tab" aria-controls="tag231" aria-selected="true">全部</button>
+                      <!-- 232 -->
+                      <button class="swiper-slide swiper-slide-tag nav-link tag-link" id="tag232-tab" data-bs-toggle="pill" data-bs-target="#tag232" role="tab" aria-controls="tag232" aria-selected="false">限量優惠</button>
+                      <!-- 233 -->
+                      <button class="swiper-slide swiper-slide-tag nav-link tag-link" id="tag233-tab" data-bs-toggle="pill" data-bs-target="#tag233" role="tab" aria-controls="tag233" aria-selected="false">渡假休閒</button>
+                      <!-- 234 -->
+                      <button class="swiper-slide swiper-slide-tag nav-link tag-link" id="tag234-tab" data-bs-toggle="pill" data-bs-target="#tag234" role="tab" aria-controls="tag234" aria-selected="false">美饌饗宴</button>
+                      <!-- 235 -->
+                      <button class="swiper-slide swiper-slide-tag nav-link tag-link" id="tag235-tab" data-bs-toggle="pill" data-bs-target="#tag235" role="tab" aria-controls="tag235" aria-selected="false">極致生活</button>
+                      <!-- 236 -->
+                      <button class="swiper-slide swiper-slide-tag nav-link tag-link" id="tag236-tab" data-bs-toggle="pill" data-bs-target="#tag236" role="tab" aria-controls="tag236" aria-selected="false">Lexus 原廠專屬優惠</button>
+                      <!-- 237 -->
+                      <button class="swiper-slide swiper-slide-tag nav-link tag-link" id="tag237-tab" data-bs-toggle="pill" data-bs-target="#tag237" role="tab" aria-controls="tag237" aria-selected="false"></button>
+                      <!-- 238 -->
+                      <button class="swiper-slide swiper-slide-tag nav-link tag-link" id="tag238-tab" data-bs-toggle="pill" data-bs-target="#tag238" role="tab" aria-controls="tag238" aria-selected="false"></button>
+                      <!-- 239 -->
+                      <button class="swiper-slide swiper-slide-tag nav-link tag-link" id="tag239-tab" data-bs-toggle="pill" data-bs-target="#tag239" role="tab" aria-controls="tag239" aria-selected="false"></button>
+                    </div>
+                    <div class="swiper-button-prev swiper-button-prev-tag"></div>
+                    <div class="swiper-button-next swiper-button-next-tag"></div>
+                  </div>
+              </div>
+      
+              <div class="mainboxs w990 mt-4">
+                <div class="tab-content" id="pills-tabContent">
+                  <!-- 231 -->
+                  <div class="tab-pane fade show active" id="tag231" role="tabpanel" aria-labelledby="tag231-tab">
+                    <div class="container-fluid px-lg-0 px-3">
+                      <div class="row">
+                        <!-- 01 -->
+                        <div class="col-sm-4 mb-4">
+                          <div class="card">
+                            <div class="row p-3 p-xl-0">
+                              <div class="col-12 card-text used border-bottom mobile-open mb-3 pb-3">Le Ruban Pâtisserie 法朋烘焙甜點坊</div>
+                              <div class="col-xl-12 col-4">
+                                <div class="position-relative bg-dark">
+                                  <div class="position-absolute top-50 start-50 translate-middle used-type">已兌換</div>
+                                  <picture>
+                                    <source srcset="images/pic01-s.png" media="(max-width: 1200px)" class="card-img-top opa50">
+                                    <img src="images/pic01.png" class="card-img-top opa50" alt="">
+                                  </picture>
+                                </div>
+                              </div>
+                              <div class="col-xl-12 col-8">
+                                <div class="card-body p-0 p-xl-3">
+                                  <p class="card-text used mb-0  mobile-close">Le Ruban Pâtisserie 法朋烘焙甜點坊</p>
+                                  <h5 class="card-title used mb-3">當月壽星生日禮當月壽星生日禮當月壽星生日禮當月壽星生日禮</h5>
+
+                                  <p class="card-text cupon-text used mb-2  mobile-close">當月壽星購買法朋7吋以上慶祝蛋糕即贈送保冷袋（價值＄299）
+                                  </p>
+
+                                  <div class="f9 used lh-base mb-xl-3 mb-1">
+                                    <i class="bi bi-clock align-baseline me-2"></i>
+                                    兌換時間：2023年07月01日 18:23:01
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <!-- 02 -->
+                        <div class="col-sm-4 mb-4">
+                          <div class="card">
+                            <div class="row p-3 p-xl-0">
+                              <div class="col-12 card-text used border-bottom mobile-open mb-3 pb-3">Le Ruban Pâtisserie 法朋烘焙甜點坊</div>
+                              <div class="col-xl-12 col-4">
+                                <div class="position-relative bg-dark">
+                                  <div class="position-absolute top-50 start-50 translate-middle used-type">已兌換</div>
+                                  <picture>
+                                    <source srcset="images/pic02-s.png" media="(max-width: 1200px)" class="card-img-top opa50">
+                                    <img src="images/pic02.png" class="card-img-top opa50" alt="">
+                                  </picture>
+                                </div>
+                              </div>
+                              <div class="col-xl-12 col-8">
+                                <div class="card-body p-0 p-xl-3">
+                                  <p class="card-text used mb-0  mobile-close">Le Ruban Pâtisserie 法朋烘焙甜點坊</p>
+                                  <h5 class="card-title used mb-3">當月壽星生日禮</h5>
+
+                                  <p class="card-text cupon-text used mb-2  mobile-close">當月壽星購買法朋7吋以上慶祝蛋糕即贈送保冷袋（價值＄299）
+                                  </p>
+
+                                  <div class="f9 used lh-base mb-xl-3 mb-1">
+                                    <i class="bi bi-clock align-baseline me-2"></i>
+                                    兌換時間：2023年07月01日 18:23:01
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <!-- 03 -->
+                        <div class="col-sm-4 mb-4">
+                          <div class="card">
+                            <div class="row p-3 p-xl-0">
+                              <div class="col-12 card-text used border-bottom mobile-open mb-3 pb-3">Le Ruban Pâtisserie 法朋烘焙甜點坊</div>
+                              <div class="col-xl-12 col-4">
+                                <div class="position-relative bg-dark">
+                                  <div class="position-absolute top-50 start-50 translate-middle used-type">已兌換</div>
+                                  <picture>
+                                    <source srcset="images/pic03-s.png" media="(max-width: 1200px)" class="card-img-top opa50">
+                                    <img src="images/pic03.png" class="card-img-top opa50" alt="">
+                                  </picture>
+                                </div>
+                              </div>
+                              <div class="col-xl-12 col-8">
+                                <div class="card-body p-0 p-xl-3">
+                                  <p class="card-text used mb-0  mobile-close">Le Ruban Pâtisserie 法朋烘焙甜點坊</p>
+                                  <h5 class="card-title used mb-3">當月壽星生日禮</h5>
+
+                                  <p class="card-text cupon-text used mb-2  mobile-close">當月壽星購買法朋7吋以上慶祝蛋糕即贈送保冷袋（價值＄299）
+                                  </p>
+
+                                  <div class="f9 used lh-base mb-xl-3 mb-1">
+                                    <i class="bi bi-clock align-baseline me-2"></i>
+                                    兌換時間：2023年07月01日 18:23:01
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <!-- 04 -->
+                        <div class="col-sm-4 mb-4">
+                          <div class="card">
+                            <div class="row p-3 p-xl-0">
+                              <div class="col-12 card-text used border-bottom mobile-open mb-3 pb-3">Le Ruban Pâtisserie 法朋烘焙甜點坊</div>
+                              <div class="col-xl-12 col-4">
+                                <div class="position-relative bg-dark">
+                                  <div class="position-absolute top-50 start-50 translate-middle used-type">已兌換</div>
+                                  <picture>
+                                    <source srcset="images/pic04-s.png" media="(max-width: 1200px)" class="card-img-top opa50">
+                                    <img src="images/pic04.png" class="card-img-top opa50" alt="">
+                                  </picture>
+                                </div>
+                              </div>
+                              <div class="col-xl-12 col-8">
+                                <div class="card-body p-0 p-xl-3">
+                                  <p class="card-text used mb-0  mobile-close">Le Ruban Pâtisserie 法朋烘焙甜點坊</p>
+                                  <h5 class="card-title used mb-3">當月壽星生日禮</h5>
+
+                                  <p class="card-text cupon-text used mb-2  mobile-close">當月壽星購買法朋7吋以上慶祝蛋糕即贈送保冷袋（價值＄299）
+                                  </p>
+
+                                  <div class="f9 used lh-base mb-xl-3 mb-1">
+                                    <i class="bi bi-clock align-baseline me-2"></i>
+                                    兌換時間：2023年07月01日 18:23:01
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <!-- 05 -->
+                        <div class="col-sm-4 mb-4">
+                          <div class="card">
+                            <div class="row p-3 p-xl-0">
+                              <div class="col-12 card-text used border-bottom mobile-open mb-3 pb-3">Le Ruban Pâtisserie 法朋烘焙甜點坊</div>
+                              <div class="col-xl-12 col-4">
+                                <div class="position-relative bg-dark">
+                                  <div class="position-absolute top-50 start-50 translate-middle used-type">已兌換</div>
+                                  <picture>
+                                    <source srcset="images/pic05-s.png" media="(max-width: 1200px)" class="card-img-top opa50">
+                                    <img src="images/pic05.png" class="card-img-top opa50" alt="">
+                                  </picture>
+                                </div>
+                              </div>
+                              <div class="col-xl-12 col-8">
+                                <div class="card-body p-0 p-xl-3">
+                                  <p class="card-text used mb-0  mobile-close">Le Ruban Pâtisserie 法朋烘焙甜點坊</p>
+                                  <h5 class="card-title used mb-3">當月壽星生日禮</h5>
+
+                                  <p class="card-text cupon-text used mb-2  mobile-close">當月壽星購買法朋7吋以上慶祝蛋糕即贈送保冷袋（價值＄299）
+                                  </p>
+
+                                  <div class="f9 used lh-base mb-xl-3 mb-1">
+                                    <i class="bi bi-clock align-baseline me-2"></i>
+                                    兌換時間：2023年07月01日 18:23:01
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- 232 -->
+                  <div class="tab-pane fade" id="tag232" role="tabpanel" aria-labelledby="tag232-tab">
+                    同上
+                  </div>
+
+                  <!-- 233 -->
+                  <div class="tab-pane fade" id="tag233" role="tabpanel" aria-labelledby="tag233-tab">
+                    同上
+                  </div>
+
+                  <!-- 234 -->
+                  <div class="tab-pane fade" id="tag234" role="tabpanel" aria-labelledby="tag234-tab">
+                    同上
+                  </div>
+
+                  <!-- 235 -->
+                  <div class="tab-pane fade" id="tag235" role="tabpanel" aria-labelledby="tag235-tab">
+                    同上
+                  </div>
+
+                  <!-- 236 -->
+                  <div class="tab-pane fade" id="tag236" role="tabpanel" aria-labelledby="tag236-tab">
+                    同上
+                  </div>
+
+                  <!-- 237 -->
+                  <div class="tab-pane fade" id="tag237" role="tabpanel" aria-labelledby="tag237-tab">
+                    同上
+                  </div>
+
+                  <!-- 238 -->
+                  <div class="tab-pane fade" id="tag238" role="tabpanel" aria-labelledby="tag238-tab">
+                    同上
+                  </div>
+
+                  <!-- 239 -->
+                  <div class="tab-pane fade" id="tag239" role="tabpanel" aria-labelledby="tag239-tab">
+                    同上
+                  </div>
+                </div>
+              </div>
+            </div>
+      
+      
+      
+            <!-- 240 list類別：已失效 -->
+            <div class="tab-pane fade" id="tag240" role="tabpanel" aria-labelledby="tag240-tab">
+              <div class="navboxs">
+                  <div class="w990 px-2 fs-4 swiper swiper-tag">
+                    <!-- 240 list類別：已失效 -->
+                    <div class="swiper-wrapper swiper-wrapper-tag nav nav-pills" id="pills-tab" role="tablist" style="flex-wrap: nowrap;">
+                      <!-- 241 -->
+                      <button class="swiper-slide swiper-slide-tag nav-link tag-link active" id="tag241-tab" data-bs-toggle="pill" data-bs-target="#tag241" role="tab" aria-controls="tag241" aria-selected="true">全部</button>
+                      <!-- 242 -->
+                      <button class="swiper-slide swiper-slide-tag nav-link tag-link" id="tag242-tab" data-bs-toggle="pill" data-bs-target="#tag242" role="tab" aria-controls="tag242" aria-selected="false">限量優惠</button>
+                      <!-- 243 -->
+                      <button class="swiper-slide swiper-slide-tag nav-link tag-link" id="tag243-tab" data-bs-toggle="pill" data-bs-target="#tag243" role="tab" aria-controls="tag243" aria-selected="false">渡假休閒</button>
+                      <!-- 244 -->
+                      <button class="swiper-slide swiper-slide-tag nav-link tag-link" id="tag244-tab" data-bs-toggle="pill" data-bs-target="#tag244" role="tab" aria-controls="tag244" aria-selected="false">美饌饗宴</button>
+                      <!-- 245 -->
+                      <button class="swiper-slide swiper-slide-tag nav-link tag-link" id="tag245-tab" data-bs-toggle="pill" data-bs-target="#tag245" role="tab" aria-controls="tag245" aria-selected="false">極致生活</button>
+                      <!-- 246 -->
+                      <button class="swiper-slide swiper-slide-tag nav-link tag-link" id="tag246-tab" data-bs-toggle="pill" data-bs-target="#tag246" role="tab" aria-controls="tag246" aria-selected="false">Lexus 原廠專屬優惠</button>
+                      <!-- 247 -->
+                      <button class="swiper-slide swiper-slide-tag nav-link tag-link" id="tag247-tab" data-bs-toggle="pill" data-bs-target="#tag247" role="tab" aria-controls="tag247" aria-selected="false"></button>
+                      <!-- 248 -->
+                      <button class="swiper-slide swiper-slide-tag nav-link tag-link" id="tag248-tab" data-bs-toggle="pill" data-bs-target="#tag248" role="tab" aria-controls="tag248" aria-selected="false"></button>
+                      <!-- 249 -->
+                      <button class="swiper-slide swiper-slide-tag nav-link tag-link" id="tag249-tab" data-bs-toggle="pill" data-bs-target="#tag249" role="tab" aria-controls="tag249" aria-selected="false"></button>
+                    </div>
+                    <div class="swiper-button-prev swiper-button-prev-tag"></div>
+                    <div class="swiper-button-next swiper-button-next-tag"></div>
+                  </div>
+              </div>
+      
+              <div class="mainboxs w990 mt-4">
+                <div class="tab-content" id="pills-tabContent">
+                  <!-- 241 -->
+                  <div class="tab-pane fade show active" id="tag241" role="tabpanel" aria-labelledby="tag241-tab">
+                    <div class="container-fluid px-lg-0 px-3">
+                      <div class="row">
+                        <!-- 01 -->
+                        <div class="col-sm-4 mb-4">
+                          <div class="card">
+                            <div class="row p-3 p-xl-0">
+                              <div class="col-12 card-text used border-bottom mobile-open mb-3 pb-3">Le Ruban Pâtisserie 法朋烘焙甜點坊</div>
+                              <div class="col-xl-12 col-4">
+                                <div class="position-relative bg-dark">
+                                  <div class="position-absolute top-50 start-50 translate-middle used-type">已失效</div>
+                                  <picture>
+                                    <source srcset="images/pic01-s.png" media="(max-width: 1200px)" class="card-img-top opa50">
+                                    <img src="images/pic01.png" class="card-img-top opa50" alt="">
+                                  </picture>
+                                </div>
+                              </div>
+                              <div class="col-xl-12 col-8">
+                                <div class="card-body p-0 p-xl-3">
+                                  <p class="card-text used mb-0  mobile-close">Le Ruban Pâtisserie 法朋烘焙甜點坊</p>
+                                  <h5 class="card-title used mb-3">當月壽星生日禮</h5>
+
+                                  <p class="card-text cupon-text used mb-2  mobile-close">當月壽星購買法朋7吋以上慶祝蛋糕即贈送保冷袋（價值＄299）
+                                  </p>
+
+                                  <div class="f9 used lh-base mb-xl-3 mb-1">
+                                    <i class="bi bi-clock align-baseline me-2"></i>
+                                    2023年07月01日 已失效
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <!-- 02 -->
+                        <div class="col-sm-4 mb-4">
+                          <div class="card">
+                            <div class="row p-3 p-xl-0">
+                              <div class="col-12 card-text used border-bottom mobile-open mb-3 pb-3">Le Ruban Pâtisserie 法朋烘焙甜點坊</div>
+                              <div class="col-xl-12 col-4">
+                                <div class="position-relative bg-dark">
+                                  <div class="position-absolute top-50 start-50 translate-middle used-type">已失效</div>
+                                  <picture>
+                                    <source srcset="images/pic02-s.png" media="(max-width: 1200px)" class="card-img-top opa50">
+                                    <img src="images/pic02.png" class="card-img-top opa50" alt="">
+                                  </picture>
+                                </div>
+                              </div>
+                              <div class="col-xl-12 col-8">
+                                <div class="card-body p-0 p-xl-3">
+                                  <p class="card-text used mb-0  mobile-close">Le Ruban Pâtisserie 法朋烘焙甜點坊</p>
+                                  <h5 class="card-title used mb-3">當月壽星生日禮</h5>
+
+                                  <p class="card-text cupon-text used mb-2  mobile-close">當月壽星購買法朋7吋以上慶祝蛋糕即贈送保冷袋（價值＄299）
+                                  </p>
+
+                                  <div class="f9 used lh-base mb-xl-3 mb-1">
+                                    <i class="bi bi-clock align-baseline me-2"></i>
+                                    2023年07月01日 已失效
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <!-- 03 -->
+                        <div class="col-sm-4 mb-4">
+                          <div class="card">
+                            <div class="row p-3 p-xl-0">
+                              <div class="col-12 card-text used border-bottom mobile-open mb-3 pb-3">Le Ruban Pâtisserie 法朋烘焙甜點坊</div>
+                              <div class="col-xl-12 col-4">
+                                <div class="position-relative bg-dark">
+                                  <div class="position-absolute top-50 start-50 translate-middle used-type">已失效</div>
+                                  <picture>
+                                    <source srcset="images/pic03-s.png" media="(max-width: 1200px)" class="card-img-top opa50">
+                                    <img src="images/pic03.png" class="card-img-top opa50" alt="">
+                                  </picture>
+                                </div>
+                              </div>
+                              <div class="col-xl-12 col-8">
+                                <div class="card-body p-0 p-xl-3">
+                                  <p class="card-text used mb-0  mobile-close">Le Ruban Pâtisserie 法朋烘焙甜點坊</p>
+                                  <h5 class="card-title used mb-3">當月壽星生日禮</h5>
+
+                                  <p class="card-text cupon-text used mb-2  mobile-close">當月壽星購買法朋7吋以上慶祝蛋糕即贈送保冷袋（價值＄299）
+                                  </p>
+
+                                  <div class="f9 used lh-base mb-xl-3 mb-1">
+                                    <i class="bi bi-clock align-baseline me-2"></i>
+                                    2023年07月01日 已失效
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <!-- 04 -->
+                        <div class="col-sm-4 mb-4">
+                          <div class="card">
+                            <div class="row p-3 p-xl-0">
+                              <div class="col-12 card-text used border-bottom mobile-open mb-3 pb-3">Le Ruban Pâtisserie 法朋烘焙甜點坊</div>
+                              <div class="col-xl-12 col-4">
+                                <div class="position-relative bg-dark">
+                                  <div class="position-absolute top-50 start-50 translate-middle used-type">已失效</div>
+                                  <picture>
+                                    <source srcset="images/pic04-s.png" media="(max-width: 1200px)" class="card-img-top opa50">
+                                    <img src="images/pic04.png" class="card-img-top opa50" alt="">
+                                  </picture>
+                                </div>
+                              </div>
+                              <div class="col-xl-12 col-8">
+                                <div class="card-body p-0 p-xl-3">
+                                  <p class="card-text used mb-0  mobile-close">Le Ruban Pâtisserie 法朋烘焙甜點坊</p>
+                                  <h5 class="card-title used mb-3">當月壽星生日禮</h5>
+
+                                  <p class="card-text cupon-text used mb-2  mobile-close">當月壽星購買法朋7吋以上慶祝蛋糕即贈送保冷袋（價值＄299）
+                                  </p>
+
+                                  <div class="f9 used lh-base mb-xl-3 mb-1">
+                                    <i class="bi bi-clock align-baseline me-2"></i>
+                                    2023年07月01日 已失效
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <!-- 05 -->
+                        <div class="col-sm-4 mb-4">
+                          <div class="card">
+                            <div class="row p-3 p-xl-0">
+                              <div class="col-12 card-text used border-bottom mobile-open mb-3 pb-3">Le Ruban Pâtisserie 法朋烘焙甜點坊</div>
+                              <div class="col-xl-12 col-4">
+                                <div class="position-relative bg-dark">
+                                  <div class="position-absolute top-50 start-50 translate-middle used-type">已失效</div>
+                                  <picture>
+                                    <source srcset="images/pic05-s.png" media="(max-width: 1200px)" class="card-img-top opa50">
+                                    <img src="images/pic05.png" class="card-img-top opa50" alt="">
+                                  </picture>
+                                </div>
+                              </div>
+                              <div class="col-xl-12 col-8">
+                                <div class="card-body p-0 p-xl-3">
+                                  <p class="card-text used mb-0  mobile-close">Le Ruban Pâtisserie 法朋烘焙甜點坊</p>
+                                  <h5 class="card-title used mb-3">當月壽星生日禮</h5>
+
+                                  <p class="card-text cupon-text used mb-2  mobile-close">當月壽星購買法朋7吋以上慶祝蛋糕即贈送保冷袋（價值＄299）
+                                  </p>
+
+                                  <div class="f9 used lh-base mb-xl-3 mb-1">
+                                    <i class="bi bi-clock align-baseline me-2"></i>
+                                    2023年07月01日 已失效
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- 242 -->
+                  <div class="tab-pane fade" id="tag242" role="tabpanel" aria-labelledby="tag242-tab">
+                    同上
+                  </div>
+
+                  <!-- 243 -->
+                  <div class="tab-pane fade" id="tag243" role="tabpanel" aria-labelledby="tag243-tab">
+                    同上
+                  </div>
+
+                  <!-- 244 -->
+                  <div class="tab-pane fade" id="tag244" role="tabpanel" aria-labelledby="tag244-tab">
+                    同上
+                  </div>
+
+                  <!-- 245 -->
+                  <div class="tab-pane fade" id="tag245" role="tabpanel" aria-labelledby="tag245-tab">
+                    同上
+                  </div>
+
+                  <!-- 246 -->
+                  <div class="tab-pane fade" id="tag246" role="tabpanel" aria-labelledby="tag246-tab">
+                    同上
+                  </div>
+
+                  <!-- 247 -->
+                  <div class="tab-pane fade" id="tag247" role="tabpanel" aria-labelledby="tag247-tab">
+                    同上
+                  </div>
+
+                  <!-- 248 -->
+                  <div class="tab-pane fade" id="tag248" role="tabpanel" aria-labelledby="tag248-tab">
+                    同上
+                  </div>
+
+                  <!-- 249 -->
+                  <div class="tab-pane fade" id="tag249" role="tabpanel" aria-labelledby="tag248-tab">
+                    同上
+                  </div>
+      
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    
+    <footer class="my-5">
+      <hr class="my-4">
+      <div class="container-fluid">
+        <!-- <div class="row align-items-center">
+          <div class="col-lg-6 col-12 text-lg-start text-center">
+            <a href="https://www.instagram.com/lexus_taiwan/?hl=zh-tw" class="social-font me-3" target="_blank">
+              <i class="fab fa-instagram"></i>
+            </a>
+            <a href="https://www.facebook.com/lexus.tw?ref=ts&fref=ts" class="social-font me-3" target="_blank">
+              <i class="fab fa-facebook-f"></i>
+            </a>
+            <a href="https://www.youtube.com/user/LEXUSTaiwanchannel" class="social-font" target="_blank">
+              <i class="fab fa-youtube"></i>
+            </a>
+          </div> -->
+          <div class="col-12 text-lg-end text-center my-lg-0 my-4">
+            <a href="https://www.lexus.com.tw/" class="footerlink" target="_blank">LEXUS官網</a>
+            <a href="https://www.lexus.com.tw/privacy.aspx" class="footerlink" target="_blank">隱私權條款</a>
+          </div>
+          <div class="col-12 text-lg-end text-center f13">© HOTAI MOTOR CO.,LTD. ALL RIGHTS RESERVED.   和泰汽車股份有限公司 03251108</div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- 複製成功的提示 -->
+    <div class="toast-container position-fixed top-50">
+      <div id="copy-toast" class="toast text-bg-success border-0" role="alert">
+        <div class="d-flex">
+          <div class="toast-body fs-5">
+            優惠碼已複製！
+          </div>
+          <button type="button" class="btn-close btn-close-white me-2 m-auto" data-bs-dismiss="toast"></button>
+        </div>
+      </div>
+    </div>
+
+    <!-- 複製行為 -->
+    <script>
+      document.getElementById("copy-icon").addEventListener("click", function () {
+        const code = document.getElementById("promo-code").textContent;
+        navigator.clipboard.writeText(code).then(() => {
+          const toastEl = document.getElementById("copy-toast");
+          const toast = new bootstrap.Toast(toastEl);
+          toast.show();
+        }).catch(err => {
+          alert("複製失敗：" + err);
+        });
+      });
+    </script>
+
+    <!-- 登入光箱 -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header memberBoxsTitle text-center">
+            <h4 class="modal-title" id="exampleModalLabel">我的尊榮回饋</h4>
+            <img src="images/decorate.svg">
+          </div>
+
+          <div class="modal-body m-3">
+            <p class="fs-5 mb-5 pb-5">
+              您已成功登入APP-2729，如您有切換其他車牌之需求，可登出後再以該車牌登入。
+            </p>
+            <div class="container-fluid overflow-hidden px-0">
+              <div class="row gx-2">
+                <div class="col-6">
+                  <button type="button" class="w-100 btn btn-black" data-bs-dismiss="modal">維持登入</button>
+                </div>
+                <div class="col-6">
+                   <button type="button" class="w-100 btn btn-black" data-bs-target="#exampleModalToggle2" data-bs-toggle="modal" data-bs-dismiss="modal">登 出</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal fade" id="exampleModalToggle2" aria-hidden="true" aria-labelledby="exampleModalToggleLabel2" tabindex="-1">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header memberBoxsTitle text-center">
+            <h4 class="modal-title" id="exampleModalLabel">我的尊榮回饋</h4>
+            <img src="images/decorate.svg">
+          </div>
+          <div class="modal-body text-center">
+            <h5 class="my-5">已登出</h5>
+          </div>
+          <!-- <div class="modal-footer">
+            <a href="index-login.html" class="w-100 btn btn-black">登 入</a>
+          </div> -->
+        </div>
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-p34f1UUtsS3wqzfto5wAAmdvj+osOnFyQFpp4Ua3gs/ZVWx6oOypYoCJhGGScy+8"
+    crossorigin="anonymous"></script>
+  </body>
+</html>
+
